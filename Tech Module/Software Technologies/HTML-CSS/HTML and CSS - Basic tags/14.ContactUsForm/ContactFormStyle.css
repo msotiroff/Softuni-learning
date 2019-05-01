@@ -1,0 +1,30 @@
+.wholeForm{
+    background-color: #dedede;
+    display: inline-block;
+    padding-right: 8px;
+    padding-top: 5px;
+    border-radius: 5px;
+}
+.wholeForm input[type="submit"]{
+    background-color: rgba(0, 0, 0, 0.23);
+    width: 80px;
+    height: 30px;
+    margin: 10px 0 12px 98px;
+    cursor: pointer;
+    font-size: 12pt;
+}
+.wholeForm input[type="text"]{
+    border-radius: 3px;
+}
+.label{
+    display: inline-block;
+    width: 75px;
+    padding: 3px;
+    margin: 5px 3px 3px 8px;
+}
+.wholeForm select{
+    width: 120px;
+    height: 22px;
+    border-radius: 4px;
+}
+

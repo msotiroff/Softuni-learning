@@ -1,0 +1,13 @@
+
+"make directory - mkdir: path;
+"traverse directory - ls: depth;
+"comparing files - cmp: path1 path2;
+"change directory - changeDirREl:relative path;
+"change directory - changeDir:absolute path;
+"read students data base - readDb: path;
+"filter {courseName} excelent/average/poor  take 2/5/all students - filterExcelent (the output is written on the console);
+"order increasing students - order {courseName} ascending/descending take 20/10/all (the output is written on the console);
+"download file - download: path of file (saved in current directory);
+"download file asinchronously - downloadAsynch: path of file (save in the current directory);
+"get help – help";
+

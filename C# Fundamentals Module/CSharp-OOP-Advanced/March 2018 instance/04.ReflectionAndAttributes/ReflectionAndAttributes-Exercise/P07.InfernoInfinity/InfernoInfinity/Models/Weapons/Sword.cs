@@ -1,0 +1,17 @@
+﻿namespace InfernoInfinity.Models.Weapons
+{
+    using InfernoInfinity.Models.Contracts;
+    using InfernoInfinity.Models.Enums;
+
+    public class Sword : BaseWeapon
+    {
+        private const int DefaultMinDamage = 4;
+        private const int DefaultMaxDamage = 6;
+        private const int SocketsCount = 3;
+        
+        public Sword(string name, Rarity rarity) 
+            : base(name, DefaultMinDamage, DefaultMaxDamage, new IGem[SocketsCount], rarity)
+        {
+        }
+    }
+}

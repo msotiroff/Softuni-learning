@@ -1,0 +1,84 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P01.OddLines", "P01.OddLines\P01.OddLines.csproj", "{202C3D17-D8BC-4F81-B033-290A525F2FEB}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P02.LineNumbers", "P02.LineNumbers\P02.LineNumbers.csproj", "{46D2E30A-081A-46F2-8429-3375B699AE6E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P03.WordCount", "P03.WordCount\P03.WordCount.csproj", "{2A2D8D5F-71C5-4E0D-8C17-788C82A4EF76}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P04.CopyBinaryFile", "P04.CopyBinaryFile\P04.CopyBinaryFile.csproj", "{AE09756F-3B34-4521-8E7A-182FE653D15E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P05.SlicingFile", "P05.SlicingFile\P05.SlicingFile.csproj", "{4DCC5D8D-3038-4BF4-8667-4598CC0E3E3E}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "P06.ZippingSlicedFiles", "P06.ZippingSlicedFiles\P06.ZippingSlicedFiles.csproj", "{F41DD934-7C1A-4CEA-8927-B3BE0FB80250}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resourses", "Resourses", "{7FEB2E36-68A8-46A0-8702-6E07EC8CE222}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\Resourses\03. Streams-Exercise-Files\copyMe.png = ..\..\Resourses\03. Streams-Exercise-Files\copyMe.png
+		..\..\Resourses\03. Streams-Exercise-Files\error.html = ..\..\Resourses\03. Streams-Exercise-Files\error.html
+		..\..\Resourses\03. Streams-Exercise-Files\index.html = ..\..\Resourses\03. Streams-Exercise-Files\index.html
+		..\..\Resourses\03. Streams-Exercise-Files\info.html = ..\..\Resourses\03. Streams-Exercise-Files\info.html
+		..\..\Resourses\03. Streams-Exercise-Files\sliceMe.mp4 = ..\..\Resourses\03. Streams-Exercise-Files\sliceMe.mp4
+		..\..\Resourses\03. Streams-Exercise-Files\text.txt = ..\..\Resourses\03. Streams-Exercise-Files\text.txt
+		..\..\Resourses\03. Streams-Exercise-Files\words.txt = ..\..\Resourses\03. Streams-Exercise-Files\words.txt
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P07.DirectoryTraversal", "P07.DirectoryTraversal\P07.DirectoryTraversal.csproj", "{05E8FD93-4C82-4537-82EA-F0AD22B56D9F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P08.FullDirectoryTraversal", "P08.FullDirectoryTraversal\P08.FullDirectoryTraversal.csproj", "{DB47303A-8319-424A-BD26-10AE298E35CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P09.HTTPServer", "P09.HTTPServer\P09.HTTPServer.csproj", "{D66026F2-94FB-49B3-84E4-E56F505E8B63}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{202C3D17-D8BC-4F81-B033-290A525F2FEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{202C3D17-D8BC-4F81-B033-290A525F2FEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{202C3D17-D8BC-4F81-B033-290A525F2FEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{202C3D17-D8BC-4F81-B033-290A525F2FEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46D2E30A-081A-46F2-8429-3375B699AE6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46D2E30A-081A-46F2-8429-3375B699AE6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46D2E30A-081A-46F2-8429-3375B699AE6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46D2E30A-081A-46F2-8429-3375B699AE6E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2A2D8D5F-71C5-4E0D-8C17-788C82A4EF76}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A2D8D5F-71C5-4E0D-8C17-788C82A4EF76}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A2D8D5F-71C5-4E0D-8C17-788C82A4EF76}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A2D8D5F-71C5-4E0D-8C17-788C82A4EF76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AE09756F-3B34-4521-8E7A-182FE653D15E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AE09756F-3B34-4521-8E7A-182FE653D15E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AE09756F-3B34-4521-8E7A-182FE653D15E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AE09756F-3B34-4521-8E7A-182FE653D15E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4DCC5D8D-3038-4BF4-8667-4598CC0E3E3E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4DCC5D8D-3038-4BF4-8667-4598CC0E3E3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4DCC5D8D-3038-4BF4-8667-4598CC0E3E3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4DCC5D8D-3038-4BF4-8667-4598CC0E3E3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F41DD934-7C1A-4CEA-8927-B3BE0FB80250}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F41DD934-7C1A-4CEA-8927-B3BE0FB80250}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F41DD934-7C1A-4CEA-8927-B3BE0FB80250}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F41DD934-7C1A-4CEA-8927-B3BE0FB80250}.Release|Any CPU.Build.0 = Release|Any CPU
+		{05E8FD93-4C82-4537-82EA-F0AD22B56D9F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{05E8FD93-4C82-4537-82EA-F0AD22B56D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{05E8FD93-4C82-4537-82EA-F0AD22B56D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{05E8FD93-4C82-4537-82EA-F0AD22B56D9F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB47303A-8319-424A-BD26-10AE298E35CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB47303A-8319-424A-BD26-10AE298E35CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB47303A-8319-424A-BD26-10AE298E35CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB47303A-8319-424A-BD26-10AE298E35CA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D66026F2-94FB-49B3-84E4-E56F505E8B63}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D66026F2-94FB-49B3-84E4-E56F505E8B63}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D66026F2-94FB-49B3-84E4-E56F505E8B63}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D66026F2-94FB-49B3-84E4-E56F505E8B63}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0522CFF4-2406-4E52-A05C-9142CDF48EF7}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2010
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InfernoInfinity", "InfernoInfinity\InfernoInfinity.csproj", "{EB3A75E3-AE12-4C9C-A548-4B281F0F21A8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{EB3A75E3-AE12-4C9C-A548-4B281F0F21A8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EB3A75E3-AE12-4C9C-A548-4B281F0F21A8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EB3A75E3-AE12-4C9C-A548-4B281F0F21A8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EB3A75E3-AE12-4C9C-A548-4B281F0F21A8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B2CD6C8E-F496-4EF0-A431-143BDCCDCDE9}
+	EndGlobalSection
+EndGlobal
