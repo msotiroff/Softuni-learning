@@ -1,0 +1,899 @@
+<?xml version="1.0" encoding="utf-8"?>
+<users>
+  <user first-name="Gloria" last-name="Alexander">
+    <sold-products>
+      <product>
+        <name>Finasteride</name>
+        <price>1374.01</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Allen">
+    <sold-products>
+      <product>
+        <name>Dover Aminophen</name>
+        <price>192.07</price>
+      </product>
+      <product>
+        <name>Dover Aminophen</name>
+        <price>192.07</price>
+      </product>
+      <product>
+        <name>Dover Aminophen</name>
+        <price>192.07</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Allen">
+    <sold-products>
+      <product>
+        <name>up and up temporary minor arthritis pain relief</name>
+        <price>1085.78</price>
+      </product>
+      <product>
+        <name>up and up temporary minor arthritis pain relief</name>
+        <price>1085.78</price>
+      </product>
+      <product>
+        <name>up and up temporary minor arthritis pain relief</name>
+        <price>1085.78</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Allen">
+    <sold-products>
+      <product>
+        <name>Peter Island Continous sunscreen kids</name>
+        <price>471.30</price>
+      </product>
+      <product>
+        <name>Peter Island Continous sunscreen kids</name>
+        <price>471.30</price>
+      </product>
+      <product>
+        <name>Peter Island Continous sunscreen kids</name>
+        <price>471.30</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Baker">
+    <sold-products>
+      <product>
+        <name>Spironolactone</name>
+        <price>933.69</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Barnes">
+    <sold-products>
+      <product>
+        <name>ENBREL</name>
+        <price>673.97</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Bennett">
+    <sold-products>
+      <product>
+        <name>Dawn Ultra Antibacterial Hand</name>
+        <price>969.86</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Patricia" last-name="Cooper">
+    <sold-products>
+      <product>
+        <name>SUMATRIPTAN SUCCINATE</name>
+        <price>1265.94</price>
+      </product>
+      <product>
+        <name>SUMATRIPTAN SUCCINATE</name>
+        <price>1265.94</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Patricia" last-name="Cooper">
+    <sold-products>
+      <product>
+        <name>Nighttime Sleep Aid</name>
+        <price>1217.11</price>
+      </product>
+      <product>
+        <name>Nighttime Sleep Aid</name>
+        <price>1217.11</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Cunningham">
+    <sold-products>
+      <product>
+        <name>CARBIDOPA AND LEVODOPA</name>
+        <price>441.64</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels">
+    <sold-products>
+      <product>
+        <name>VITALUMIERE AQUA</name>
+        <price>1293.09</price>
+      </product>
+      <product>
+        <name>VITALUMIERE AQUA</name>
+        <price>1293.09</price>
+      </product>
+      <product>
+        <name>VITALUMIERE AQUA</name>
+        <price>1293.09</price>
+      </product>
+      <product>
+        <name>VITALUMIERE AQUA</name>
+        <price>1293.09</price>
+      </product>
+      <product>
+        <name>VITALUMIERE AQUA</name>
+        <price>1293.09</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels">
+    <sold-products>
+      <product>
+        <name>ISOPROPYL ALCOHOL</name>
+        <price>339.48</price>
+      </product>
+      <product>
+        <name>ISOPROPYL ALCOHOL</name>
+        <price>339.48</price>
+      </product>
+      <product>
+        <name>ISOPROPYL ALCOHOL</name>
+        <price>339.48</price>
+      </product>
+      <product>
+        <name>ISOPROPYL ALCOHOL</name>
+        <price>339.48</price>
+      </product>
+      <product>
+        <name>ISOPROPYL ALCOHOL</name>
+        <price>339.48</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels">
+    <sold-products>
+      <product>
+        <name>Smooth texture Orange flavor</name>
+        <price>976.65</price>
+      </product>
+      <product>
+        <name>Smooth texture Orange flavor</name>
+        <price>976.65</price>
+      </product>
+      <product>
+        <name>Smooth texture Orange flavor</name>
+        <price>976.65</price>
+      </product>
+      <product>
+        <name>Smooth texture Orange flavor</name>
+        <price>976.65</price>
+      </product>
+      <product>
+        <name>Smooth texture Orange flavor</name>
+        <price>976.65</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels">
+    <sold-products>
+      <product>
+        <name>Budpak Hemorrhoid Anesthetic</name>
+        <price>1499.29</price>
+      </product>
+      <product>
+        <name>Budpak Hemorrhoid Anesthetic</name>
+        <price>1499.29</price>
+      </product>
+      <product>
+        <name>Budpak Hemorrhoid Anesthetic</name>
+        <price>1499.29</price>
+      </product>
+      <product>
+        <name>Budpak Hemorrhoid Anesthetic</name>
+        <price>1499.29</price>
+      </product>
+      <product>
+        <name>Budpak Hemorrhoid Anesthetic</name>
+        <price>1499.29</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels">
+    <sold-products>
+      <product>
+        <name>Glipizide</name>
+        <price>621.78</price>
+      </product>
+      <product>
+        <name>Glipizide</name>
+        <price>621.78</price>
+      </product>
+      <product>
+        <name>Glipizide</name>
+        <price>621.78</price>
+      </product>
+      <product>
+        <name>Glipizide</name>
+        <price>621.78</price>
+      </product>
+      <product>
+        <name>Glipizide</name>
+        <price>621.78</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Sarah" last-name="Day">
+    <sold-products>
+      <product>
+        <name>Glipizide and Metformin Hydrochloride</name>
+        <price>953.60</price>
+      </product>
+      <product>
+        <name>Glipizide and Metformin Hydrochloride</name>
+        <price>953.60</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Sarah" last-name="Day">
+    <sold-products>
+      <product>
+        <name>Glyburide</name>
+        <price>95.10</price>
+      </product>
+      <product>
+        <name>Glyburide</name>
+        <price>95.10</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Clarence" last-name="Fowler">
+    <sold-products>
+      <product>
+        <name>Warfarin Sodium</name>
+        <price>1379.79</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Bonnie" last-name="Fox">
+    <sold-products>
+      <product>
+        <name>Etoposide</name>
+        <price>1483.96</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Kathy" last-name="Gilbert">
+    <sold-products>
+      <product>
+        <name>Nevirapine</name>
+        <price>1374.72</price>
+      </product>
+      <product>
+        <name>Nevirapine</name>
+        <price>1374.72</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Kathy" last-name="Gilbert">
+    <sold-products>
+      <product>
+        <name>LV-FX</name>
+        <price>820.87</price>
+      </product>
+      <product>
+        <name>LV-FX</name>
+        <price>820.87</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>Fair Foundation SPF 15</name>
+        <price>1394.24</price>
+      </product>
+      <product>
+        <name>Fair Foundation SPF 15</name>
+        <price>1394.24</price>
+      </product>
+      <product>
+        <name>Fair Foundation SPF 15</name>
+        <price>1394.24</price>
+      </product>
+      <product>
+        <name>Fair Foundation SPF 15</name>
+        <price>1394.24</price>
+      </product>
+      <product>
+        <name>Fair Foundation SPF 15</name>
+        <price>1394.24</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>PLANTAGO LANCEOLATA POLLEN</name>
+        <price>561.68</price>
+      </product>
+      <product>
+        <name>PLANTAGO LANCEOLATA POLLEN</name>
+        <price>561.68</price>
+      </product>
+      <product>
+        <name>PLANTAGO LANCEOLATA POLLEN</name>
+        <price>561.68</price>
+      </product>
+      <product>
+        <name>PLANTAGO LANCEOLATA POLLEN</name>
+        <price>561.68</price>
+      </product>
+      <product>
+        <name>PLANTAGO LANCEOLATA POLLEN</name>
+        <price>561.68</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory</name>
+        <price>616.19</price>
+      </product>
+      <product>
+        <name>No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory</name>
+        <price>616.19</price>
+      </product>
+      <product>
+        <name>No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory</name>
+        <price>616.19</price>
+      </product>
+      <product>
+        <name>No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory</name>
+        <price>616.19</price>
+      </product>
+      <product>
+        <name>No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory</name>
+        <price>616.19</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>CVS Therapeutic Menthol Pain Reliever</name>
+        <price>1033.42</price>
+      </product>
+      <product>
+        <name>CVS Therapeutic Menthol Pain Reliever</name>
+        <price>1033.42</price>
+      </product>
+      <product>
+        <name>CVS Therapeutic Menthol Pain Reliever</name>
+        <price>1033.42</price>
+      </product>
+      <product>
+        <name>CVS Therapeutic Menthol Pain Reliever</name>
+        <price>1033.42</price>
+      </product>
+      <product>
+        <name>CVS Therapeutic Menthol Pain Reliever</name>
+        <price>1033.42</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>Topex</name>
+        <price>1258.49</price>
+      </product>
+      <product>
+        <name>Topex</name>
+        <price>1258.49</price>
+      </product>
+      <product>
+        <name>Topex</name>
+        <price>1258.49</price>
+      </product>
+      <product>
+        <name>Topex</name>
+        <price>1258.49</price>
+      </product>
+      <product>
+        <name>Topex</name>
+        <price>1258.49</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>Topiramate</name>
+        <price>578.77</price>
+      </product>
+      <product>
+        <name>Topiramate</name>
+        <price>578.77</price>
+      </product>
+      <product>
+        <name>Topiramate</name>
+        <price>578.77</price>
+      </product>
+      <product>
+        <name>Topiramate</name>
+        <price>578.77</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>Topical 60 Sec Sodium Fluoride</name>
+        <price>1228.84</price>
+      </product>
+      <product>
+        <name>Topical 60 Sec Sodium Fluoride</name>
+        <price>1228.84</price>
+      </product>
+      <product>
+        <name>Topical 60 Sec Sodium Fluoride</name>
+        <price>1228.84</price>
+      </product>
+      <product>
+        <name>Topical 60 Sec Sodium Fluoride</name>
+        <price>1228.84</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>MEDI-FIRST Non-Aspirin</name>
+        <price>1301.28</price>
+      </product>
+      <product>
+        <name>MEDI-FIRST Non-Aspirin</name>
+        <price>1301.28</price>
+      </product>
+      <product>
+        <name>MEDI-FIRST Non-Aspirin</name>
+        <price>1301.28</price>
+      </product>
+      <product>
+        <name>MEDI-FIRST Non-Aspirin</name>
+        <price>1301.28</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris">
+    <sold-products>
+      <product>
+        <name>LANEIGE MYSTIC VEIL FOUNDATION</name>
+        <price>20.86</price>
+      </product>
+      <product>
+        <name>LANEIGE MYSTIC VEIL FOUNDATION</name>
+        <price>20.86</price>
+      </product>
+      <product>
+        <name>LANEIGE MYSTIC VEIL FOUNDATION</name>
+        <price>20.86</price>
+      </product>
+      <product>
+        <name>LANEIGE MYSTIC VEIL FOUNDATION</name>
+        <price>20.86</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Diana" last-name="Harvey">
+    <sold-products>
+      <product>
+        <name>PRIMAXIN</name>
+        <price>686.66</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Benjamin" last-name="Henry">
+    <sold-products>
+      <product>
+        <name>PCA SKIN ACNE</name>
+        <price>1356.22</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Jean" last-name="Henry">
+    <sold-products>
+      <product>
+        <name>NEO-POLY-BAC HYDRO</name>
+        <price>967.32</price>
+      </product>
+      <product>
+        <name>NEO-POLY-BAC HYDRO</name>
+        <price>967.32</price>
+      </product>
+      <product>
+        <name>NEO-POLY-BAC HYDRO</name>
+        <price>967.32</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Jean" last-name="Henry">
+    <sold-products>
+      <product>
+        <name>Leflunomide</name>
+        <price>312.85</price>
+      </product>
+      <product>
+        <name>Leflunomide</name>
+        <price>312.85</price>
+      </product>
+      <product>
+        <name>Leflunomide</name>
+        <price>312.85</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Jean" last-name="Henry">
+    <sold-products>
+      <product>
+        <name>Metformin Hydrochloride</name>
+        <price>953.99</price>
+      </product>
+      <product>
+        <name>Metformin Hydrochloride</name>
+        <price>953.99</price>
+      </product>
+      <product>
+        <name>Metformin Hydrochloride</name>
+        <price>953.99</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Paula" last-name="Hill">
+    <sold-products>
+      <product>
+        <name>Metaxalone</name>
+        <price>79.94</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Brenda" last-name="Howell">
+    <sold-products>
+      <product>
+        <name>Yellow Jacket hymenoptera venom Venomil Diagnostic</name>
+        <price>23.58</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Rachel" last-name="Johnson">
+    <sold-products>
+      <product>
+        <name>PAMO Kill Natural</name>
+        <price>1181.06</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Patrick" last-name="King">
+    <sold-products>
+      <product>
+        <name>Aspen</name>
+        <price>1046.46</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Betty" last-name="Lawson">
+    <sold-products>
+      <product>
+        <name>Ranitidine</name>
+        <price>926.64</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Martinez">
+    <sold-products>
+      <product>
+        <name>Glycopyrrolate</name>
+        <price>1471.43</price>
+      </product>
+      <product>
+        <name>Glycopyrrolate</name>
+        <price>1471.43</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Martinez">
+    <sold-products>
+      <product>
+        <name>Head and Shoulders Conditioner</name>
+        <price>1099.59</price>
+      </product>
+      <product>
+        <name>Head and Shoulders Conditioner</name>
+        <price>1099.59</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Mitchell">
+    <sold-products>
+      <product>
+        <name>MOIST MOISTURE SKIN TONER</name>
+        <price>152.43</price>
+      </product>
+      <product>
+        <name>MOIST MOISTURE SKIN TONER</name>
+        <price>152.43</price>
+      </product>
+      <product>
+        <name>MOIST MOISTURE SKIN TONER</name>
+        <price>152.43</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Mitchell">
+    <sold-products>
+      <product>
+        <name>Pioglitazone</name>
+        <price>306.56</price>
+      </product>
+      <product>
+        <name>Pioglitazone</name>
+        <price>306.56</price>
+      </product>
+      <product>
+        <name>Pioglitazone</name>
+        <price>306.56</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Mitchell">
+    <sold-products>
+      <product>
+        <name>Shopko Lip Treatment</name>
+        <price>861.42</price>
+      </product>
+      <product>
+        <name>Shopko Lip Treatment</name>
+        <price>861.42</price>
+      </product>
+      <product>
+        <name>Shopko Lip Treatment</name>
+        <price>861.42</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Chris" last-name="Mitchell">
+    <sold-products>
+      <product>
+        <name>Meloxicam</name>
+        <price>809.18</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Moreno">
+    <sold-products>
+      <product>
+        <name>EMEND</name>
+        <price>1365.51</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Anna" last-name="Parker">
+    <sold-products>
+      <product>
+        <name>Allopurinol</name>
+        <price>336.81</price>
+      </product>
+      <product>
+        <name>Allopurinol</name>
+        <price>336.81</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Anna" last-name="Parker">
+    <sold-products>
+      <product>
+        <name>Ketorolac Tromethamine</name>
+        <price>608.18</price>
+      </product>
+      <product>
+        <name>Ketorolac Tromethamine</name>
+        <price>608.18</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Emily" last-name="Parker">
+    <sold-products>
+      <product>
+        <name>CLARINS Ever Matte SPF 15 - 105 Nude</name>
+        <price>696.06</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Christina" last-name="Patterson">
+    <sold-products>
+      <product>
+        <name>ziprasidone hydrochloride</name>
+        <price>628.66</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Jennifer" last-name="Riley">
+    <sold-products>
+      <product>
+        <name>Labetalol Hydrochloride</name>
+        <price>1345.11</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Sandra" last-name="Riley">
+    <sold-products>
+      <product>
+        <name>Extra Strength Pain Reliever PM</name>
+        <price>542.72</price>
+      </product>
+      <product>
+        <name>Extra Strength Pain Reliever PM</name>
+        <price>542.72</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Sandra" last-name="Riley">
+    <sold-products>
+      <product>
+        <name>ANXIETY/STRESS RELIEF</name>
+        <price>324.66</price>
+      </product>
+      <product>
+        <name>ANXIETY/STRESS RELIEF</name>
+        <price>324.66</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Schmidt">
+    <sold-products>
+      <product>
+        <name>equaline</name>
+        <price>520.45</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Thomas" last-name="Snyder">
+    <sold-products>
+      <product>
+        <name>Pollens - Trees, Birch Mix</name>
+        <price>1153.54</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Ann" last-name="Stevens">
+    <sold-products>
+      <product>
+        <name>AMARANTHUS PALMERI POLLEN</name>
+        <price>623.16</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Gary" last-name="Stevens">
+    <sold-products>
+      <product>
+        <name>Trihexyphenidyl Hydrochloride</name>
+        <price>64.88</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Stewart">
+    <sold-products>
+      <product>
+        <name>IOPE SUPER VITAL</name>
+        <price>824.68</price>
+      </product>
+      <product>
+        <name>IOPE SUPER VITAL</name>
+        <price>824.68</price>
+      </product>
+      <product>
+        <name>IOPE SUPER VITAL</name>
+        <price>824.68</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Stewart">
+    <sold-products>
+      <product>
+        <name>Acid Reducer</name>
+        <price>1443.51</price>
+      </product>
+      <product>
+        <name>Acid Reducer</name>
+        <price>1443.51</price>
+      </product>
+      <product>
+        <name>Acid Reducer</name>
+        <price>1443.51</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Stewart">
+    <sold-products>
+      <product>
+        <name>Imipramine Hydrochloride</name>
+        <price>648.69</price>
+      </product>
+      <product>
+        <name>Imipramine Hydrochloride</name>
+        <price>648.69</price>
+      </product>
+      <product>
+        <name>Imipramine Hydrochloride</name>
+        <price>648.69</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Eugene" last-name="Stewart">
+    <sold-products>
+      <product>
+        <name>Care One Hemorrhoidal</name>
+        <price>932.18</price>
+      </product>
+      <product>
+        <name>Care One Hemorrhoidal</name>
+        <price>932.18</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Eugene" last-name="Stewart">
+    <sold-products>
+      <product>
+        <name>Ampicillin</name>
+        <price>674.63</price>
+      </product>
+      <product>
+        <name>Ampicillin</name>
+        <price>674.63</price>
+      </product>
+    </sold-products>
+  </user>
+  <user last-name="Thompson">
+    <sold-products>
+      <product>
+        <name>MEDICATED DANDRUFF</name>
+        <price>1351.02</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Betty" last-name="Ward">
+    <sold-products>
+      <product>
+        <name>REYATAZ</name>
+        <price>41.97</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Marie" last-name="Williamson">
+    <sold-products>
+      <product>
+        <name>Amitriptyline Hydrochloride</name>
+        <price>1453.96</price>
+      </product>
+    </sold-products>
+  </user>
+  <user first-name="Jeremy" last-name="Woods">
+    <sold-products>
+      <product>
+        <name>kirkland signature minoxidil</name>
+        <price>49.17</price>
+      </product>
+    </sold-products>
+  </user>
+</users>

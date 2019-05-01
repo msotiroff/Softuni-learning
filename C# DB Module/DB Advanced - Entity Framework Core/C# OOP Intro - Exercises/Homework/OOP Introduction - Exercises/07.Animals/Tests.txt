@@ -1,0 +1,23 @@
+Tomcat
+Tommy 12 Female
+Kitten
+Kitty 10
+Beast!
+
+
+Tomcat
+Tommy invalidAge Female
+Kitten
+Kitty 10
+Beast!
+
+
+Cat
+Tommy 12
+Kitten
+Kitty 10 Male
+Beast!
+
+Animal
+Tommy 12 Female
+Beast!

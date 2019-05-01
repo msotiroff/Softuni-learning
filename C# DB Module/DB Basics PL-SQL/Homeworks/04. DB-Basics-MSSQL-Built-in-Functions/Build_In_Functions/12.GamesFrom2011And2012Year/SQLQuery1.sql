@@ -1,0 +1,3 @@
+SELECT TOP 50 Name, FORMAT(Start,'yyyy-MM-dd') AS [Start] FROM Games
+WHERE Start BETWEEN '20110101' AND '20121231'
+ORDER BY Start, Name

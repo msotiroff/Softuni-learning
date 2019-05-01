@@ -1,0 +1,70 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "01.EmployeeAddress", "01.EmployeeAddress\01.EmployeeAddress.ssmssqlproj", "{2C0BA598-5CCE-40A9-B23D-F5543F2CFB24}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02.AddressesWithTowns", "02.AddressesWithTowns\02.AddressesWithTowns.ssmssqlproj", "{A13EFB22-3B5F-41B0-9182-7F8CA96D003B}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "03.SalesEmployees", "03.SalesEmployees\03.SalesEmployees.ssmssqlproj", "{15DAD933-0BFA-4029-8792-FC935159C930}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "04.EmployeeDepartments", "04.EmployeeDepartments\04.EmployeeDepartments.ssmssqlproj", "{19E9D0AC-A389-4050-A7DF-892BB9D48679}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "05.EmployeesWithoutProjects", "05.EmployeesWithoutProjects\05.EmployeesWithoutProjects.ssmssqlproj", "{0B93CCA6-5E5C-4B74-B193-56C8477792BD}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "06.EmployeesHiredAfter", "06.EmployeesHiredAfter\06.EmployeesHiredAfter.ssmssqlproj", "{C67029C2-A051-4708-ADF5-1216BA0FF291}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "07.EmployeesWithProject", "07.EmployeesWithProject\07.EmployeesWithProject.ssmssqlproj", "{40E45E52-0069-4CFB-BAC0-FE5A8A290EDC}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "08.Employee24", "08.Employee24\08.Employee24.ssmssqlproj", "{F379198E-101C-4424-8E5D-D5D0722521B1}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "09.EmployeeManager", "09.EmployeeManager\09.EmployeeManager.ssmssqlproj", "{83CBEAF4-9BE2-40BE-AF1E-E454D8188EC4}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "10.EmployeesSummary", "10.EmployeesSummary\10.EmployeesSummary.ssmssqlproj", "{354FB2D5-E2E0-4826-AAC4-38F685E81A17}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "11.MinAverageSalary", "11.MinAverageSalary\11.MinAverageSalary.ssmssqlproj", "{967B803B-B971-4E31-940A-83B75FBBB259}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "12.HighestPeaksInBulgaria", "12.HighestPeaksInBulgaria\12.HighestPeaksInBulgaria.ssmssqlproj", "{3D27193B-9B1D-4602-B844-27E155E31CD3}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "13.CountMountainRanges", "13.CountMountainRanges\13.CountMountainRanges.ssmssqlproj", "{24E6E344-9AFE-49AE-9D77-69DC81A5E0A1}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "14.CountriesWithOrWithoutRivers", "14.CountriesWithOrWithoutRivers\14.CountriesWithOrWithoutRivers.ssmssqlproj", "{44E984F4-D076-4869-B636-DB3E02BA5807}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "16.CountriesWithoutAnyMountains", "16.CountriesWithoutAnyMountains\16.CountriesWithoutAnyMountains.ssmssqlproj", "{4C6C4CF3-873E-47E6-8B43-3C85B38F6565}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "17.HighestPeakAndLongestRiverByCountry", "17.HighestPeakAndLongestRiverByCountry\17.HighestPeakAndLongestRiverByCountry.ssmssqlproj", "{C507AFA2-476C-4CDC-86BB-75478E5BDF86}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "15.ContinentsAndCurrencies", "15.ContinentsAndCurrencies\15.ContinentsAndCurrencies.ssmssqlproj", "{8B916CE1-D439-4B50-B01D-28D2A0D1746D}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "18.HighestPeakNameAndElevationByCountry", "18.HighestPeakNameAndElevationByCountry\18.HighestPeakNameAndElevationByCountry.ssmssqlproj", "{4AB2B3EC-1A83-459A-BBC7-83E1F597308C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2C0BA598-5CCE-40A9-B23D-F5543F2CFB24}.Default|Default.ActiveCfg = Default
+		{71C42A4A-46F6-4081-87AC-1459EF7C4ED1}.Default|Default.ActiveCfg = Default
+		{A13EFB22-3B5F-41B0-9182-7F8CA96D003B}.Default|Default.ActiveCfg = Default
+		{15DAD933-0BFA-4029-8792-FC935159C930}.Default|Default.ActiveCfg = Default
+		{19E9D0AC-A389-4050-A7DF-892BB9D48679}.Default|Default.ActiveCfg = Default
+		{0B93CCA6-5E5C-4B74-B193-56C8477792BD}.Default|Default.ActiveCfg = Default
+		{C67029C2-A051-4708-ADF5-1216BA0FF291}.Default|Default.ActiveCfg = Default
+		{40E45E52-0069-4CFB-BAC0-FE5A8A290EDC}.Default|Default.ActiveCfg = Default
+		{F379198E-101C-4424-8E5D-D5D0722521B1}.Default|Default.ActiveCfg = Default
+		{83CBEAF4-9BE2-40BE-AF1E-E454D8188EC4}.Default|Default.ActiveCfg = Default
+		{354FB2D5-E2E0-4826-AAC4-38F685E81A17}.Default|Default.ActiveCfg = Default
+		{967B803B-B971-4E31-940A-83B75FBBB259}.Default|Default.ActiveCfg = Default
+		{3D27193B-9B1D-4602-B844-27E155E31CD3}.Default|Default.ActiveCfg = Default
+		{24E6E344-9AFE-49AE-9D77-69DC81A5E0A1}.Default|Default.ActiveCfg = Default
+		{44E984F4-D076-4869-B636-DB3E02BA5807}.Default|Default.ActiveCfg = Default
+		{4C6C4CF3-873E-47E6-8B43-3C85B38F6565}.Default|Default.ActiveCfg = Default
+		{C507AFA2-476C-4CDC-86BB-75478E5BDF86}.Default|Default.ActiveCfg = Default
+		{8B916CE1-D439-4B50-B01D-28D2A0D1746D}.Default|Default.ActiveCfg = Default
+		{4AB2B3EC-1A83-459A-BBC7-83E1F597308C}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,9 @@
+Please, enter one of the following commands:
+
+Enter 0 -> to Exit program
+Enter 1 -> to Reset Database
+Enter 2 -> to Import data from json files
+Enter 3 -> to Export data to json files
+Enter 4 -> to Import data from xml files
+Enter 5 -> to Export data to xml files
+===============

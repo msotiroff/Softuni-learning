@@ -1,0 +1,44 @@
+<Cards>
+  <Card name="Jeremy Carroll" type="Elder">
+    <Tickets>
+      <Ticket>
+        <OriginStation>Sofia</OriginStation>
+        <DestinationStation>Varna</DestinationStation>
+        <DepartureTime>2017-05-24T22:00:00.0000000</DepartureTime>
+      </Ticket>
+      <Ticket>
+        <OriginStation>Huaian</OriginStation>
+        <DestinationStation>Chysky</DestinationStation>
+        <DepartureTime>2011-08-13T12:33:00.0000000</DepartureTime>
+      </Ticket>
+      <Ticket>
+        <OriginStation>Sofia</OriginStation>
+        <DestinationStation>Varna</DestinationStation>
+        <DepartureTime>2017-05-24T12:00:00.0000000</DepartureTime>
+      </Ticket>
+      <Ticket>
+        <OriginStation>Sofia</OriginStation>
+        <DestinationStation>Varna</DestinationStation>
+        <DepartureTime>2017-05-24T12:00:00.0000000</DepartureTime>
+      </Ticket>
+    </Tickets>
+  </Card>
+  <Card name="Michelle Sanders" type="Elder">
+    <Tickets>
+      <Ticket>
+        <OriginStation>Matriz de Camaragibe</OriginStation>
+        <DestinationStation>Chysky</DestinationStation>
+        <DepartureTime>2016-11-23T15:09:00.0000000</DepartureTime>
+      </Ticket>
+    </Tickets>
+  </Card>
+  <Card name="Wanda Ward" type="Elder">
+    <Tickets>
+      <Ticket>
+        <OriginStation>Sofia</OriginStation>
+        <DestinationStation>Sofia Sever</DestinationStation>
+        <DepartureTime>2016-12-27T12:00:00.0000000</DepartureTime>
+      </Ticket>
+    </Tickets>
+  </Card>
+</Cards>

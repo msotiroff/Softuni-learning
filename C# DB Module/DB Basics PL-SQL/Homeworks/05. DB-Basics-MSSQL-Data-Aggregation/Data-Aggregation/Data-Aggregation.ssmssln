@@ -1,0 +1,73 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# SQL Server Management Studio Solution File, Format Version 14.00
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "01.RecordsCount", "01.RecordsCount\01.RecordsCount.ssmssqlproj", "{121162B0-1A34-4C48-AA56-6F3C10C293EB}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "02.LongestMagicWand", "02.LongestMagicWand\02.LongestMagicWand.ssmssqlproj", "{462F4FBE-1297-4B29-A757-AC7CCF31FA2D}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "03.LongestMagicWandPerDepositGroups", "03.LongestMagicWandPerDepositGroups\03.LongestMagicWandPerDepositGroups.ssmssqlproj", "{FFC46D6B-846B-470C-9951-191107BFF7C7}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "04.SmallestDepGroupPerMagicWandSize", "04.SmallestDepGroupPerMagicWandSize\04.SmallestDepGroupPerMagicWandSize.ssmssqlproj", "{A5C50413-F53A-41D4-B3A1-8D10C77ED566}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "05.DepositsSum", "05.DepositsSum\05.DepositsSum.ssmssqlproj", "{D80C0A43-BDF9-44D8-9A8D-D94EC1F8BD3E}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "06.DepositsSumForOllivanderFamily", "06.DepositsSumForOllivanderFamily\06.DepositsSumForOllivanderFamily.ssmssqlproj", "{7846B8C1-30DD-4330-B31C-7E1E6269D719}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "07.DepositsFilter", "07.DepositsFilter\07.DepositsFilter.ssmssqlproj", "{B5BA2F63-2918-4658-A9AB-B718D7866E05}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "08.DepositCharge", "08.DepositCharge\08.DepositCharge.ssmssqlproj", "{5B50788F-BBA7-4002-9E1C-A6E0DBB4C9DD}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "09.AgeGroups", "09.AgeGroups\09.AgeGroups.ssmssqlproj", "{985892AE-3924-45F0-9B72-97998259B90F}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "10.FirstLetter", "10.FirstLetter\10.FirstLetter.ssmssqlproj", "{732A2DF5-892A-4461-81FB-2D197BE454CB}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "11.AverageInterest", "11.AverageInterest\11.AverageInterest.ssmssqlproj", "{1FD72B1F-30E4-4D8F-BF4D-C637DF1E013D}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "12.RichWizardPoorWizard", "12.RichWizardPoorWizard\12.RichWizardPoorWizard.ssmssqlproj", "{B927F093-F30B-4CD1-975F-0D62CDBB86F5}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "13.DepartmentsTotalSalaries", "13.DepartmentsTotalSalaries\13.DepartmentsTotalSalaries.ssmssqlproj", "{B00D3917-F833-4197-84A6-731CEA688D35}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "14.EmployeesMinimumSalaries", "14.EmployeesMinimumSalaries\14.EmployeesMinimumSalaries.ssmssqlproj", "{9793C0C9-4174-43B5-9399-D1CAF9547CDD}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "15.EmployeesAverageSalaries", "15.EmployeesAverageSalaries\15.EmployeesAverageSalaries.ssmssqlproj", "{92B5341A-D66F-44BF-82D3-4AE933F10035}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "16.EmployeesMaximumSalaries", "16.EmployeesMaximumSalaries\16.EmployeesMaximumSalaries.ssmssqlproj", "{418E2671-C6B7-4C10-9686-7ADF74947141}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "17.EmployeesCountSalaries", "17.EmployeesCountSalaries\17.EmployeesCountSalaries.ssmssqlproj", "{0B374BC3-A64C-4455-B2D9-952979B4A442}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "18.ThirdHighestSalary", "18.ThirdHighestSalary\18.ThirdHighestSalary.ssmssqlproj", "{2B839262-D6E7-4CDF-936E-787F5257D24E}"
+EndProject
+Project("{4F2E2C19-372F-40D8-9FA7-9D2138C6997A}") = "19.SalaryChallenge", "19.SalaryChallenge\19.SalaryChallenge.ssmssqlproj", "{250066A1-D7F7-4EFC-A676-4943BD2F46F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Default|Default = Default|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{110E51F3-37FE-4203-A57E-C8F6D0C580E2}.Default|Default.ActiveCfg = Default
+		{121162B0-1A34-4C48-AA56-6F3C10C293EB}.Default|Default.ActiveCfg = Default
+		{462F4FBE-1297-4B29-A757-AC7CCF31FA2D}.Default|Default.ActiveCfg = Default
+		{FFC46D6B-846B-470C-9951-191107BFF7C7}.Default|Default.ActiveCfg = Default
+		{A5C50413-F53A-41D4-B3A1-8D10C77ED566}.Default|Default.ActiveCfg = Default
+		{D80C0A43-BDF9-44D8-9A8D-D94EC1F8BD3E}.Default|Default.ActiveCfg = Default
+		{7846B8C1-30DD-4330-B31C-7E1E6269D719}.Default|Default.ActiveCfg = Default
+		{B5BA2F63-2918-4658-A9AB-B718D7866E05}.Default|Default.ActiveCfg = Default
+		{5B50788F-BBA7-4002-9E1C-A6E0DBB4C9DD}.Default|Default.ActiveCfg = Default
+		{985892AE-3924-45F0-9B72-97998259B90F}.Default|Default.ActiveCfg = Default
+		{732A2DF5-892A-4461-81FB-2D197BE454CB}.Default|Default.ActiveCfg = Default
+		{1FD72B1F-30E4-4D8F-BF4D-C637DF1E013D}.Default|Default.ActiveCfg = Default
+		{B927F093-F30B-4CD1-975F-0D62CDBB86F5}.Default|Default.ActiveCfg = Default
+		{B00D3917-F833-4197-84A6-731CEA688D35}.Default|Default.ActiveCfg = Default
+		{9793C0C9-4174-43B5-9399-D1CAF9547CDD}.Default|Default.ActiveCfg = Default
+		{92B5341A-D66F-44BF-82D3-4AE933F10035}.Default|Default.ActiveCfg = Default
+		{418E2671-C6B7-4C10-9686-7ADF74947141}.Default|Default.ActiveCfg = Default
+		{0B374BC3-A64C-4455-B2D9-952979B4A442}.Default|Default.ActiveCfg = Default
+		{2B839262-D6E7-4CDF-936E-787F5257D24E}.Default|Default.ActiveCfg = Default
+		{250066A1-D7F7-4EFC-A676-4943BD2F46F0}.Default|Default.ActiveCfg = Default
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

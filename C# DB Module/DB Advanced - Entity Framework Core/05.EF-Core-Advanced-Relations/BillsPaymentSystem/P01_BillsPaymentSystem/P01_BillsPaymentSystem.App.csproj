@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\P01_BillsPaymentSystem.Data\P01_BillsPaymentSystem.Data.csproj" />
+    <ProjectReference Include="..\P02_BillsPaymentDbInitializer\P02_BillsPaymentDbInitializer.csproj" />
+    <ProjectReference Include="..\P04_BillPayer\P04_BillPayer.csproj" />
+    <ProjectReference Include="..\UserDetailsMenu\P03_UserDetailsMenu.csproj" />
+  </ItemGroup>
+
+</Project>

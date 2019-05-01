@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Products>
+  <product name="Budpak Hemorrhoid Anesthetic" price="1499.29" buyer="Diana Harvey" />
+  <product name="Etoposide" price="1483.96" buyer="Baker" />
+  <product name="Glycopyrrolate" price="1471.43" buyer="Doris Cook" />
+  <product name="Amitriptyline Hydrochloride" price="1453.96" buyer="Jeremy Woods" />
+  <product name="Acid Reducer" price="1443.51" buyer="Mitchell" />
+  <product name="Fair Foundation SPF 15" price="1394.24" buyer="Arthur Reynolds" />
+  <product name="Warfarin Sodium" price="1379.79" buyer="Lawson" />
+  <product name="Nevirapine" price="1374.72" buyer="Jacqueline Perez" />
+  <product name="Finasteride" price="1374.01" buyer="Brenda Howell" />
+  <product name="EMEND" price="1365.51" buyer="Jennifer Riley" />
+  <product name="PCA SKIN ACNE" price="1356.22" buyer="Thomas Snyder" />
+  <product name="MEDICATED DANDRUFF" price="1351.02" buyer="Kathy Gilbert" />
+  <product name="Labetalol Hydrochloride" price="1345.11" buyer="Wanda Harris" />
+  <product name="MEDI-FIRST Non-Aspirin" price="1301.28" buyer="Bennett" />
+  <product name="VITALUMIERE AQUA" price="1293.09" buyer="Christina Patterson" />
+  <product name="SUMATRIPTAN SUCCINATE" price="1265.94" buyer="Bonnie Fox" />
+  <product name="Topex" price="1258.49" buyer="Moreno" />
+  <product name="Topical 60 Sec Sodium Fluoride" price="1228.84" buyer="Thompson" />
+  <product name="Nighttime Sleep Aid" price="1217.11" buyer="Gloria Alexander" />
+  <product name="PAMO Kill Natural" price="1181.06" buyer="Fred Barnes" />
+  <product name="Pollens - Trees, Birch Mix" price="1153.54" buyer="Betty Ward" />
+  <product name="Head and Shoulders Conditioner" price="1099.59" buyer="Bennett" />
+  <product name="up and up temporary minor arthritis pain relief" price="1085.78" buyer="Joshua Murray" />
+  <product name="Aspen" price="1046.46" buyer="Betty Ward" />
+  <product name="CVS Therapeutic Menthol Pain Reliever" price="1033.42" buyer="Patricia Fuller" />
+</Products>

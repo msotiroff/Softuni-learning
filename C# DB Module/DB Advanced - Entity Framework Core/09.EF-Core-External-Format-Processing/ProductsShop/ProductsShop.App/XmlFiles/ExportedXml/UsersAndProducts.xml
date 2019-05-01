@@ -1,0 +1,428 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Users count="67">
+  <user first-name="Eugene" last-name="Stewart" age="65">
+    <sold-products count="2">
+      <product name="Care One Hemorrhoidal" price="932.18" />
+      <product name="Ampicillin" price="674.63" />
+    </sold-products>
+  </user>
+  <user first-name="Rachel" last-name="Johnson" age="24">
+    <sold-products count="1">
+      <product name="PAMO Kill Natural" price="1181.06" />
+    </sold-products>
+  </user>
+  <user first-name="Patrick" last-name="King">
+    <sold-products count="1">
+      <product name="Aspen" price="1046.46" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris" age="43">
+    <sold-products count="5">
+      <product name="Fair Foundation SPF 15" price="1394.24" />
+      <product name="PLANTAGO LANCEOLATA POLLEN" price="561.68" />
+      <product name="No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory" price="616.19" />
+      <product name="CVS Therapeutic Menthol Pain Reliever" price="1033.42" />
+      <product name="Topex" price="1258.49" />
+    </sold-products>
+  </user>
+  <user last-name="Stewart" age="39">
+    <sold-products count="3">
+      <product name="IOPE SUPER VITAL" price="824.68" />
+      <product name="Acid Reducer" price="1443.51" />
+      <product name="Imipramine Hydrochloride" price="648.69" />
+    </sold-products>
+  </user>
+  <user first-name="Jennifer" last-name="Riley">
+    <sold-products count="1">
+      <product name="Labetalol Hydrochloride" price="1345.11" />
+    </sold-products>
+  </user>
+  <user first-name="Sandra" last-name="Riley" age="74">
+    <sold-products count="2">
+      <product name="Extra Strength Pain Reliever PM" price="542.72" />
+      <product name="ANXIETY/STRESS RELIEF" price="324.66" />
+    </sold-products>
+  </user>
+  <user first-name="Patricia" last-name="Cooper" age="72">
+    <sold-products count="2">
+      <product name="SUMATRIPTAN SUCCINATE" price="1265.94" />
+      <product name="Nighttime Sleep Aid" price="1217.11" />
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris" age="26">
+    <sold-products count="4">
+      <product name="Topiramate" price="578.77" />
+      <product name="Topical 60 Sec Sodium Fluoride" price="1228.84" />
+      <product name="MEDI-FIRST Non-Aspirin" price="1301.28" />
+      <product name="LANEIGE MYSTIC VEIL FOUNDATION" price="20.86" />
+    </sold-products>
+  </user>
+  <user first-name="Chris" last-name="Mitchell" age="59">
+    <sold-products count="1">
+      <product name="Meloxicam" price="809.18" />
+    </sold-products>
+  </user>
+  <user last-name="Mitchell" age="41">
+    <sold-products count="3">
+      <product name="MOIST MOISTURE SKIN TONER" price="152.43" />
+      <product name="Pioglitazone" price="306.56" />
+      <product name="Shopko Lip Treatment" price="861.42" />
+    </sold-products>
+  </user>
+  <user first-name="Patricia" last-name="Cooper" age="72">
+    <sold-products count="2">
+      <product name="SUMATRIPTAN SUCCINATE" price="1265.94" />
+      <product name="Nighttime Sleep Aid" price="1217.11" />
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Barnes">
+    <sold-products count="1">
+      <product name="ENBREL" price="673.97" />
+    </sold-products>
+  </user>
+  <user first-name="Gary" last-name="Stevens">
+    <sold-products count="1">
+      <product name="Trihexyphenidyl Hydrochloride" price="64.88" />
+    </sold-products>
+  </user>
+  <user first-name="Anna" last-name="Parker" age="56">
+    <sold-products count="2">
+      <product name="Allopurinol" price="336.81" />
+      <product name="Ketorolac Tromethamine" price="608.18" />
+    </sold-products>
+  </user>
+  <user first-name="Thomas" last-name="Snyder" age="40">
+    <sold-products count="1">
+      <product name="Pollens - Trees, Birch Mix" price="1153.54" />
+    </sold-products>
+  </user>
+  <user last-name="Cunningham">
+    <sold-products count="1">
+      <product name="CARBIDOPA AND LEVODOPA" price="441.64" />
+    </sold-products>
+  </user>
+  <user last-name="Mitchell" age="41">
+    <sold-products count="3">
+      <product name="MOIST MOISTURE SKIN TONER" price="152.43" />
+      <product name="Pioglitazone" price="306.56" />
+      <product name="Shopko Lip Treatment" price="861.42" />
+    </sold-products>
+  </user>
+  <user first-name="Kathy" last-name="Gilbert" age="51">
+    <sold-products count="2">
+      <product name="Nevirapine" price="1374.72" />
+      <product name="LV-FX" price="820.87" />
+    </sold-products>
+  </user>
+  <user first-name="Marie" last-name="Williamson">
+    <sold-products count="1">
+      <product name="Amitriptyline Hydrochloride" price="1453.96" />
+    </sold-products>
+  </user>
+  <user first-name="Sandra" last-name="Riley" age="74">
+    <sold-products count="2">
+      <product name="Extra Strength Pain Reliever PM" price="542.72" />
+      <product name="ANXIETY/STRESS RELIEF" price="324.66" />
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Allen" age="57">
+    <sold-products count="3">
+      <product name="Dover Aminophen" price="192.07" />
+      <product name="up and up temporary minor arthritis pain relief" price="1085.78" />
+      <product name="Peter Island Continous sunscreen kids" price="471.30" />
+    </sold-products>
+  </user>
+  <user first-name="Christina" last-name="Patterson" age="63">
+    <sold-products count="1">
+      <product name="ziprasidone hydrochloride" price="628.66" />
+    </sold-products>
+  </user>
+  <user last-name="Stewart" age="39">
+    <sold-products count="3">
+      <product name="IOPE SUPER VITAL" price="824.68" />
+      <product name="Acid Reducer" price="1443.51" />
+      <product name="Imipramine Hydrochloride" price="648.69" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Martinez" age="28">
+    <sold-products count="2">
+      <product name="Glycopyrrolate" price="1471.43" />
+      <product name="Head and Shoulders Conditioner" price="1099.59" />
+    </sold-products>
+  </user>
+  <user last-name="Stewart" age="39">
+    <sold-products count="3">
+      <product name="IOPE SUPER VITAL" price="824.68" />
+      <product name="Acid Reducer" price="1443.51" />
+      <product name="Imipramine Hydrochloride" price="648.69" />
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels" age="59">
+    <sold-products count="5">
+      <product name="VITALUMIERE AQUA" price="1293.09" />
+      <product name="ISOPROPYL ALCOHOL" price="339.48" />
+      <product name="Smooth texture Orange flavor" price="976.65" />
+      <product name="Budpak Hemorrhoid Anesthetic" price="1499.29" />
+      <product name="Glipizide" price="621.78" />
+    </sold-products>
+  </user>
+  <user first-name="Benjamin" last-name="Henry" age="63">
+    <sold-products count="1">
+      <product name="PCA SKIN ACNE" price="1356.22" />
+    </sold-products>
+  </user>
+  <user first-name="Anna" last-name="Parker" age="56">
+    <sold-products count="2">
+      <product name="Allopurinol" price="336.81" />
+      <product name="Ketorolac Tromethamine" price="608.18" />
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels" age="59">
+    <sold-products count="5">
+      <product name="VITALUMIERE AQUA" price="1293.09" />
+      <product name="ISOPROPYL ALCOHOL" price="339.48" />
+      <product name="Smooth texture Orange flavor" price="976.65" />
+      <product name="Budpak Hemorrhoid Anesthetic" price="1499.29" />
+      <product name="Glipizide" price="621.78" />
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Allen" age="57">
+    <sold-products count="3">
+      <product name="Dover Aminophen" price="192.07" />
+      <product name="up and up temporary minor arthritis pain relief" price="1085.78" />
+      <product name="Peter Island Continous sunscreen kids" price="471.30" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris" age="43">
+    <sold-products count="5">
+      <product name="Fair Foundation SPF 15" price="1394.24" />
+      <product name="PLANTAGO LANCEOLATA POLLEN" price="561.68" />
+      <product name="No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory" price="616.19" />
+      <product name="CVS Therapeutic Menthol Pain Reliever" price="1033.42" />
+      <product name="Topex" price="1258.49" />
+    </sold-products>
+  </user>
+  <user first-name="Betty" last-name="Lawson" age="38">
+    <sold-products count="1">
+      <product name="Ranitidine" price="926.64" />
+    </sold-products>
+  </user>
+  <user first-name="Betty" last-name="Ward" age="70">
+    <sold-products count="1">
+      <product name="REYATAZ" price="41.97" />
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels" age="59">
+    <sold-products count="5">
+      <product name="VITALUMIERE AQUA" price="1293.09" />
+      <product name="ISOPROPYL ALCOHOL" price="339.48" />
+      <product name="Smooth texture Orange flavor" price="976.65" />
+      <product name="Budpak Hemorrhoid Anesthetic" price="1499.29" />
+      <product name="Glipizide" price="621.78" />
+    </sold-products>
+  </user>
+  <user first-name="Fred" last-name="Allen" age="57">
+    <sold-products count="3">
+      <product name="Dover Aminophen" price="192.07" />
+      <product name="up and up temporary minor arthritis pain relief" price="1085.78" />
+      <product name="Peter Island Continous sunscreen kids" price="471.30" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris" age="43">
+    <sold-products count="5">
+      <product name="Fair Foundation SPF 15" price="1394.24" />
+      <product name="PLANTAGO LANCEOLATA POLLEN" price="561.68" />
+      <product name="No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory" price="616.19" />
+      <product name="CVS Therapeutic Menthol Pain Reliever" price="1033.42" />
+      <product name="Topex" price="1258.49" />
+    </sold-products>
+  </user>
+  <user first-name="Clarence" last-name="Fowler" age="50">
+    <sold-products count="1">
+      <product name="Warfarin Sodium" price="1379.79" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris" age="43">
+    <sold-products count="5">
+      <product name="Fair Foundation SPF 15" price="1394.24" />
+      <product name="PLANTAGO LANCEOLATA POLLEN" price="561.68" />
+      <product name="No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory" price="616.19" />
+      <product name="CVS Therapeutic Menthol Pain Reliever" price="1033.42" />
+      <product name="Topex" price="1258.49" />
+    </sold-products>
+  </user>
+  <user last-name="Mitchell" age="41">
+    <sold-products count="3">
+      <product name="MOIST MOISTURE SKIN TONER" price="152.43" />
+      <product name="Pioglitazone" price="306.56" />
+      <product name="Shopko Lip Treatment" price="861.42" />
+    </sold-products>
+  </user>
+  <user last-name="Moreno" age="37">
+    <sold-products count="1">
+      <product name="EMEND" price="1365.51" />
+    </sold-products>
+  </user>
+  <user first-name="Sarah" last-name="Day" age="33">
+    <sold-products count="2">
+      <product name="Glipizide and Metformin Hydrochloride" price="953.60" />
+      <product name="Glyburide" price="95.10" />
+    </sold-products>
+  </user>
+  <user first-name="Jeremy" last-name="Woods" age="20">
+    <sold-products count="1">
+      <product name="kirkland signature minoxidil" price="49.17" />
+    </sold-products>
+  </user>
+  <user first-name="Emily" last-name="Parker" age="41">
+    <sold-products count="1">
+      <product name="CLARINS Ever Matte SPF 15 - 105 Nude" price="696.06" />
+    </sold-products>
+  </user>
+  <user last-name="Baker">
+    <sold-products count="1">
+      <product name="Spironolactone" price="933.69" />
+    </sold-products>
+  </user>
+  <user first-name="Gloria" last-name="Alexander" age="61">
+    <sold-products count="1">
+      <product name="Finasteride" price="1374.01" />
+    </sold-products>
+  </user>
+  <user last-name="Thompson" age="46">
+    <sold-products count="1">
+      <product name="MEDICATED DANDRUFF" price="1351.02" />
+    </sold-products>
+  </user>
+  <user first-name="Sarah" last-name="Day" age="33">
+    <sold-products count="2">
+      <product name="Glipizide and Metformin Hydrochloride" price="953.60" />
+      <product name="Glyburide" price="95.10" />
+    </sold-products>
+  </user>
+  <user first-name="Jean" last-name="Henry">
+    <sold-products count="3">
+      <product name="NEO-POLY-BAC HYDRO" price="967.32" />
+      <product name="Leflunomide" price="312.85" />
+      <product name="Metformin Hydrochloride" price="953.99" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Martinez" age="28">
+    <sold-products count="2">
+      <product name="Glycopyrrolate" price="1471.43" />
+      <product name="Head and Shoulders Conditioner" price="1099.59" />
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris" age="26">
+    <sold-products count="4">
+      <product name="Topiramate" price="578.77" />
+      <product name="Topical 60 Sec Sodium Fluoride" price="1228.84" />
+      <product name="MEDI-FIRST Non-Aspirin" price="1301.28" />
+      <product name="LANEIGE MYSTIC VEIL FOUNDATION" price="20.86" />
+    </sold-products>
+  </user>
+  <user last-name="Schmidt" age="70">
+    <sold-products count="1">
+      <product name="equaline" price="520.45" />
+    </sold-products>
+  </user>
+  <user first-name="Diana" last-name="Harvey" age="46">
+    <sold-products count="1">
+      <product name="PRIMAXIN" price="686.66" />
+    </sold-products>
+  </user>
+  <user first-name="Jean" last-name="Henry">
+    <sold-products count="3">
+      <product name="NEO-POLY-BAC HYDRO" price="967.32" />
+      <product name="Leflunomide" price="312.85" />
+      <product name="Metformin Hydrochloride" price="953.99" />
+    </sold-products>
+  </user>
+  <user first-name="Nicole" last-name="Harris" age="43">
+    <sold-products count="5">
+      <product name="Fair Foundation SPF 15" price="1394.24" />
+      <product name="PLANTAGO LANCEOLATA POLLEN" price="561.68" />
+      <product name="No7 Protect and Perfect Foundation Sunscreen Broad Spectrum SPF 15 Cool Ivory" price="616.19" />
+      <product name="CVS Therapeutic Menthol Pain Reliever" price="1033.42" />
+      <product name="Topex" price="1258.49" />
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris" age="26">
+    <sold-products count="4">
+      <product name="Topiramate" price="578.77" />
+      <product name="Topical 60 Sec Sodium Fluoride" price="1228.84" />
+      <product name="MEDI-FIRST Non-Aspirin" price="1301.28" />
+      <product name="LANEIGE MYSTIC VEIL FOUNDATION" price="20.86" />
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels" age="59">
+    <sold-products count="5">
+      <product name="VITALUMIERE AQUA" price="1293.09" />
+      <product name="ISOPROPYL ALCOHOL" price="339.48" />
+      <product name="Smooth texture Orange flavor" price="976.65" />
+      <product name="Budpak Hemorrhoid Anesthetic" price="1499.29" />
+      <product name="Glipizide" price="621.78" />
+    </sold-products>
+  </user>
+  <user first-name="Jean" last-name="Henry">
+    <sold-products count="3">
+      <product name="NEO-POLY-BAC HYDRO" price="967.32" />
+      <product name="Leflunomide" price="312.85" />
+      <product name="Metformin Hydrochloride" price="953.99" />
+    </sold-products>
+  </user>
+  <user first-name="Wanda" last-name="Harris" age="26">
+    <sold-products count="4">
+      <product name="Topiramate" price="578.77" />
+      <product name="Topical 60 Sec Sodium Fluoride" price="1228.84" />
+      <product name="MEDI-FIRST Non-Aspirin" price="1301.28" />
+      <product name="LANEIGE MYSTIC VEIL FOUNDATION" price="20.86" />
+    </sold-products>
+  </user>
+  <user first-name="Bonnie" last-name="Fox" age="18">
+    <sold-products count="1">
+      <product name="Etoposide" price="1483.96" />
+    </sold-products>
+  </user>
+  <user last-name="Bennett">
+    <sold-products count="1">
+      <product name="Dawn Ultra Antibacterial Hand" price="969.86" />
+    </sold-products>
+  </user>
+  <user first-name="Carl" last-name="Daniels" age="59">
+    <sold-products count="5">
+      <product name="VITALUMIERE AQUA" price="1293.09" />
+      <product name="ISOPROPYL ALCOHOL" price="339.48" />
+      <product name="Smooth texture Orange flavor" price="976.65" />
+      <product name="Budpak Hemorrhoid Anesthetic" price="1499.29" />
+      <product name="Glipizide" price="621.78" />
+    </sold-products>
+  </user>
+  <user first-name="Brenda" last-name="Howell" age="75">
+    <sold-products count="1">
+      <product name="Yellow Jacket hymenoptera venom Venomil Diagnostic" price="23.58" />
+    </sold-products>
+  </user>
+  <user first-name="Kathy" last-name="Gilbert" age="51">
+    <sold-products count="2">
+      <product name="Nevirapine" price="1374.72" />
+      <product name="LV-FX" price="820.87" />
+    </sold-products>
+  </user>
+  <user first-name="Paula" last-name="Hill" age="74">
+    <sold-products count="1">
+      <product name="Metaxalone" price="79.94" />
+    </sold-products>
+  </user>
+  <user first-name="Eugene" last-name="Stewart" age="65">
+    <sold-products count="2">
+      <product name="Care One Hemorrhoidal" price="932.18" />
+      <product name="Ampicillin" price="674.63" />
+    </sold-products>
+  </user>
+  <user first-name="Ann" last-name="Stevens">
+    <sold-products count="1">
+      <product name="AMARANTHUS PALMERI POLLEN" price="623.16" />
+    </sold-products>
+  </user>
+</Users>
