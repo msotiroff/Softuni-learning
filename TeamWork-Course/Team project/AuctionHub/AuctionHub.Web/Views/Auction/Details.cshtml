@@ -1,0 +1,106 @@
+﻿@model AuctionDetailsViewModel
+
+@{
+    ViewData["Title"] = "Auction Details";
+}
+
+<h3 class="text center">Auction for product "@Model.Auction.ProductName"</h3>
+
+<div class="row">
+    <h2 class="text center">Current Bid: <span id="result">@(Model.CurrentBid != null ? (Model.CurrentBid.Value + $" by {Model.CurrentBid.User.UserName}") : 0.ToString())</span></h2>
+
+    <div class="col s5"></div>
+    <div class="col s2">
+        <input type="text" id="bid" />
+        @*<a id="bid" asp-controller="Bid" asp-action="Create" asp-route-auctionId="@Model.Auction.Id" class="btn waves-effect waves-orange grey center-align col s12">Make Bid</a>*@
+        <a onclick="bid('@User.Identity.Name', @Model.Auction.Id)" class="btn waves-effect waves-orange grey center-align col s12">Make Bid</a>
+    </div>
+    <div class="col s5"></div>
+</div>
+<div class="row">
+    <div class="col s6">
+        <form asp-controller="Auction" asp-action="Details" method="post">
+            <div>
+                <div>
+                    @Html.LabelFor(m => m.Auction.CategoryName)
+                </div>
+                <div>
+                    @Html.TextBoxFor(m => m.Auction.CategoryName, new { @readonly = "readonly" })
+                </div>
+            </div>
+            <div>
+                @Html.LabelFor(m => m.Auction.Description)
+                <div>
+                    @Html.TextAreaFor(m => m.Auction.Description, new { @readonly = "readonly", rows = 10, style = "height:auto" })
+                </div>
+            </div>
+
+            <div>
+                @foreach (var picture in Model.Auction.Pictures)
+                {
+                    <a target="_blank" href="@picture.Path">
+                        <img src="@picture.Path" height="150" />
+                    </a>
+                    <a asp-controller="Product" asp-action="DeletePicture" asp-route-id="@picture.Id" class="btn waves-effect waves-red">Delete this Picture</a>
+                }
+            </div>
+            <ul>
+                @foreach (Bid bid in Model.LastBids)
+                {
+                    <li>
+                        <i></i> - @bid.Value$
+                    </li>
+                }
+            </ul>
+            <a asp-controller="Auction" asp-action="Edit" asp-route-id="@Model.Auction.Id" class="btn waves-effect waves-yellow">Edit</a>
+            <a asp-controller="Auction" asp-action="Delete" asp-route-id="@Model.Auction.Id" class="btn waves-effect red">Delete</a>
+        </form>
+
+    </div>
+    <div class="col s6">
+        <h4>Comments:</h4>
+        <hr />
+        @if (User.Identity.IsAuthenticated)
+        {
+            <div>
+                @*<form asp-controller="Comment" asp-action="Add" asp-route-id="@Model.Auction.Id" method="post">
+                        <textarea cols="60" rows="3" name="comment" id="comment"></textarea>
+                        <br />
+                        <input type="submit" class="btn btn-primary" value="Add Comment" />
+                    </form>*@
+                <textarea cols="60" rows="3" name="comment" id="comment"></textarea>
+                <br />
+                <a class="btn btn-primary" onclick="comment('@User.Identity.Name', @Model.Auction.Id)">ADD COMMENT</a>
+            </div>
+        }
+        else
+        {
+            <span>To comment in this auction, please <a asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Context.Request.Path">login</a> into your account.</span>
+        }
+        <br />
+        <div id="comments">
+            @foreach (var comment in Model.Auction.Comments)
+            {
+                <div class="card-panel" 
+                     comment-id="@comment.Id"
+                     @(comment.IsUserAuthor ? "ondblclick=commentEditMode(" + comment.Id +")" : "")>
+                    <div class="card-content flow-text">@comment.Author : <span id="commentContent">@comment.Content</span></div>
+                    <p class="small"><i>@comment.PublishDate.ToShortDateString() </i></p>
+                    @if (comment.IsUserAuthor)
+                    {
+                        <a class="btn btn-sm" onclick="deleteComment(@comment.Id)">Delete</a>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script type="text/javascript" src="~/js/signalrHandler.js"></script>
+    <script type="text/javascript" src="~/js/bidHandler.js"></script>
+    <script type="text/javascript" src="~/js/commentHandler.js"></script>
+    <script>
+        window.loggedInUser = '@User.Identity.Name';
+    </script>
+}

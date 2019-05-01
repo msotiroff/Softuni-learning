@@ -1,0 +1,35 @@
+﻿@model IEnumerable<ProductListingServiceModel>
+
+@{
+    ViewData["Title"] = "List";
+}
+
+<h1 class="brand-logo black-text center">Product List</h1>
+
+<form asp-controller="Product" asp-action="Create" method="post">
+    <div>
+        <table class="tabl table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var product in Model)
+                 {
+                    <tr>
+                        <th>@product.Name</th>
+                        <th>@product.Description</th>
+                        <th>
+                            <label for="@product.Name"></label>
+                            <a asp-action="Details" asp-route-id="@product.Id" class="btn waves-effect waves-purple">Details</a>
+                        </th>
+                    </tr>
+                 }
+            </tbody>
+        </table>
+        </div>
+
+</form>

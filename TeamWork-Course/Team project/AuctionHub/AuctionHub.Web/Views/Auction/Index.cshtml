@@ -1,0 +1,35 @@
+﻿@model IEnumerable<IndexAuctionViewModel>
+
+@{
+    ViewBag.Title = "Index";
+
+}
+
+<h1 class="brand-logo black-text center">Active Auctions</h1>
+
+<form asp-controller="Auction" asp-action="Create" method="post">
+    <div>
+        <table class="tabl table-hover table-bordered">
+            <thead>
+                <tr>
+                    <th>Auction</th>
+                    <th>Starting Price</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var auction in Model)
+                {
+                    <tr>
+                        <th><h5>@auction.ProductName</h5></th>
+                        <th>@auction.Price</th>
+                        <th><a asp-action="Details" asp-route-id="@auction.Id" class="btn waves-effect waves-purple">Auction Details</a>
+                        <th></th>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+</form>
+
