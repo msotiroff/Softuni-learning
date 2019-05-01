@@ -1,0 +1,24 @@
+﻿@model Library.Web.Models.Director.DirectorDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+
+
+<h2>Director Info</h2>
+<hr />
+
+<div class="container">
+    <div class="col-md-4">
+        <h3>@Model.Name</h3>
+        <ul>
+            @foreach (var movie in Model.Movies)
+            {
+                <li>
+                    <a asp-controller="movie" asp-action="details" asp-route-id="@movie.Id">@movie.Title</a><span> (@movie.Status)</span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

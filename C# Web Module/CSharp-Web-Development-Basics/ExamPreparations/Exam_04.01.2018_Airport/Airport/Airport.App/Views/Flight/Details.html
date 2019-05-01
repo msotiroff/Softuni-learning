@@ -1,0 +1,40 @@
+﻿<section class="ticket-area">
+    <div class="ticket-area-left">
+        <img src="static/img/Sheffield.png" alt="">
+    </div>
+    <div class="ticket-area-right">
+        <h3>{{{flight-destination}}}</h3>
+        <div>from {{{flight-origin}}}</div>
+        <div class="data-and-time">{{{flight-datetime}}}<a style="display: {{{adminDisplay}}}" href="/flight/edit?id={{{flight-id}}}" class="edit-flight-detail"></a></div>
+    </div>
+</section>
+<section style="display: {{{adminDisplay}}}" class="seat-info">
+    <form action="/flight/AddSeat" class="seat-form" method="post">
+        <input type="hidden" name="FlightId" value="{{{flight-id}}}" />
+        <input type="number" name="Price" step="0.01" placeholder="Price">
+        <input type="text" name="Type" placeholder="Type">
+        <input type="number" name="Amount" min="1" max="999" placeholder="Tickets Counter">
+        <input type="submit" class="create-seat" value="Create Seat">
+    </form>
+</section>
+<section style="display: {{{show-business}}}" class="flight-details">
+    <form action="/shopping/AddToCart" class="seat-form" method="post">
+        <span>{{{business-price}}}$</span><span>Business</span>
+        <input type="hidden" name="Class" value="Business" />
+        <input type="hidden" name="Price" value="{{{business-price}}}" />
+        <input type="number" min="1" name="Amount" placeholder="Add Number">
+        <input type="submit" class="create-seat" value="Add to Cart">
+        <a href="" class="delete">X</a>
+    </form>
+</section>
+<section style="display: {{{show-economy}}}" class="flight-details">
+    <form action="/shopping/AddToCart" class="seat-form" method="post">
+        <span>{{{economy-price}}}$</span><span>Economy</span>
+        <input type="hidden" name="Class" value="Economy" />
+        <input type="hidden" name="Price" value="{{{economy-price}}}" />
+        <input type="hidden" name="FlightId" value="{{{flight-id}}}" />
+        <input type="number" min="1" name="Amount" placeholder="Add Number">
+        <input type="submit" class="create-seat" value="Add to Cart">
+        <a href="" class="delete">X</a>
+    </form>
+</section>

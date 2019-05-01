@@ -1,0 +1,12 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\WizMail.Common\WizMail.Common.csproj" />
+    <ProjectReference Include="..\WizMail.Data\WizMail.Data.csproj" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kitten</title>
+    <meta charset="UTF-8">
+    <link href="../Content/css/bootstrap.min.css" rel="stylesheet" />
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/">FDMC</a>
+
+                <div class="collapse navbar-collapse justify-content-end row" id="navbarSupportedContent">
+                    <ul style="display: {{{guestDisplay}}}" class="navbar-nav ml-auto">
+                        <li class="nav-item active col-md-4">
+                            <a class="nav-link" href="/">Home</a>
+                        </li>
+                        <li class="nav-item active col-md-4">
+                            <a class="nav-link" href="/account/login">Login</a>
+                        </li>
+                        <li class="nav-item active col-md-4">
+                            <a class="nav-link" href="/account/register">Register</a>
+                        </li>
+                    </ul>
+                    <ul style="display: {{{userDisplay}}}" class="navbar-nav ml-auto">
+                        <li class="nav-item active col-md-4">
+                            <a class="nav-link" href="/kitten/all">All Kittens</a>
+                        </li>
+                        <li class="nav-item active col-md-4">
+                            <a class="nav-link" href="/kitten/add">Add Kitten</a>
+                        </li>
+                        <li class="nav-item active col-md-4">
+                            <a class="nav-link" href="/account/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <main>
+            {{{content}}}
+
+            <hr class="my-5" />
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="text-muted container-fluid text-center">
+                        &copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
+                    </div>
+                </div>
+            </footer>
+        </main>
+    </div>
+
+    <script src="../Content/js/jquery-3.3.1.js"></script>
+    <script src="../Content/js/bootstrap.min.js"></script>
+    <script src="../Content/js/notify.js"></script>
+</body>
+</html>
+<script>
+    let show = '{{{show-notification}}}';
+    if (show == 'true') {
+           $.notify("{{{message}}}", "{{{class}}}");
+       }
+</script>

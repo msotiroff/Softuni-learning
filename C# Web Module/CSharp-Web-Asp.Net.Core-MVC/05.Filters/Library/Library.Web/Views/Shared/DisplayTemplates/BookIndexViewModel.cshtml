@@ -1,0 +1,21 @@
+﻿@model BookIndexViewModel
+
+<tr>
+    <td>
+        <a href="/Book/Details/@Model.Id">@Html.Raw(Model.Title)</a>
+    </td>
+    <td>
+        @for (int i = 0; i < Model.Originators.Count; i++)
+        {
+            var author = Model.Originators[i];
+            <a asp-controller="author" asp-action="details" asp-route-id="@author.Id">@Html.Raw(author.Name)</a>
+            if (i < Model.Originators.Count - 1)
+            {
+                <span>, </span>
+            }
+        }
+    </td>
+    <td>Book</td>
+    <td>@Model.Status</td>
+</tr>
+

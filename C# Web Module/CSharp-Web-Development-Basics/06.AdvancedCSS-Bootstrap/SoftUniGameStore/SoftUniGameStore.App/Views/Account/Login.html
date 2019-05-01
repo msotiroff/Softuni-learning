@@ -1,0 +1,33 @@
+﻿<main class="col-4 ml-auto mr-auto text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center"><h1 class="display-3">Login</h1></div>
+                <br />
+                <div style="display:{{{showError}}}">
+                    <div class="alert alert-danger" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        {{{error}}}
+                    </div>
+                </div>
+                <form method="post" action="/Account/LoginConfirmed">
+                    <div class="form-group row">
+                        <label class="sr-only">Email</label>
+                        <input class="form-control" name="Email" placeholder="somebody@example.com" />
+                    </div>
+                    <div class="form-group row">
+                        <label class="sr-only">Password</label>
+                        <input type="password" class="form-control" name="Password" placeholder="Password" />
+                    </div>
+
+                    <input type="submit" class="btn btn-outline-warning btn-lg btn-block"
+                           value="Login" />
+                </form>
+                <br />
+            </div>
+        </div>
+    </div>
+</main>
+<br />

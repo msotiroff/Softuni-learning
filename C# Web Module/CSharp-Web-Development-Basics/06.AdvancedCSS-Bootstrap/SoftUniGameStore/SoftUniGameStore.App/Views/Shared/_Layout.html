@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="keywords" content="game, buy">
+    <title>Game Store</title>
+    <link href="/wwwroot/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="/wwwroot/css/bootstrap-grid.min.css" rel="stylesheet" />
+    <link href="/wwwroot/css/bootstrap-reboot.min.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-light bg-warning">
+            <div class="container">
+                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                        aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <a class="navbar-brand" href="/">SoftUni Store</a>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/Shopping/CartDetails">Cart</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown" style="display: {{{adminDisplay}}}">
+                            <a class="nav-link dropdown-toggle" href="#" id="AdminDropdownMenuLink"
+                               data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                Admin
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                                <a class="dropdown-item" href="/Admin/GameList">Games</a>
+                                <a class="dropdown-item" href="/Admin/UserList">Users</a>
+                            </div>
+                        </li>
+                        <li style="display: {{{authenticatedDisplay}}}" class="nav-item">
+                            <a class="nav-link" href="/Account/Logout">Logout</a>
+                        </li>
+                        <li style="display: {{{anonymousDisplay}}}" class="nav-item">
+                            <a class="nav-link" href="/Account/Register">Register</a>
+                        </li>
+                        <li style="display: {{{anonymousDisplay}}}" class="nav-item">
+                            <a class="nav-link" href="/Account/Login">Login</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </nav>
+    </header>
+    {{{content}}}
+    <hr />
+    <footer>
+        <div class="container modal-footer">
+            <p>&copy; 2018 - SoftUni Game Store</p>
+        </div>
+    </footer>
+    <script src="/wwwroot/scripts/jquery-3.1.1.min.js"></script>
+    <script src="/wwwroot/scripts/bootstrap.min.js"></script>
+ </body>
+</html>

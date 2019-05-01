@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\CHUSHKA.Common\CHUSHKA.Common.csproj" />
+    <ProjectReference Include="..\CHUSHKA.Data\CHUSHKA.Data.csproj" />
+    <ProjectReference Include="..\CHUSHKA.Models\CHUSHKA.Models.csproj" />
+  </ItemGroup>
+
+</Project>

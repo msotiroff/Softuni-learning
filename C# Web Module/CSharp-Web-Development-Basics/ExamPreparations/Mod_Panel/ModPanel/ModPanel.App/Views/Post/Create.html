@@ -1,0 +1,19 @@
+﻿<div class="container">
+    <div class="row justify-content-center">
+        <div class="col col-md-6">
+            <div class="text-center">
+                <h1 class="display-3">New post</h1>
+            </div>
+            <hr />
+            <form class="form-group" method="post" action="/{{{controller}}}/create">
+                <label for="Title">Title</label>
+                <input type="text" class="form-control" name="Title" />
+                <br />
+                <label for="Content">Content</label>
+                <textarea rows="10" type="text" class="form-control" name="Content"></textarea>
+                <br />
+                <input type="submit" value="Create" class="btn btn-primary col-md-12" />
+            </form>
+        </div>
+    </div>
+</div>

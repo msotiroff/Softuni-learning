@@ -1,0 +1,69 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Judge</title>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link href="../Resources/css/bootstrap.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="/home/index">Judge</a>
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav-collapse" aria-controls="nav-collapse"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="nav-collapse">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0"></ul>
+                    <ul class="navbar-nav" style="display: {{{userDisplay}}}">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/contest/all">Contests</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/submission/all">Submissions</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/logout">Logout</a>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav" style="display: {{{guestDisplay}}}">
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/login">Login</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/user/register">Register</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    {{{content}}}
+
+    <footer>
+        <div class="container modal-footer">
+            <p>&copy; 2017 - Software University</p>
+        </div>
+    </footer>
+
+    <script src="../Resources/js/jquery-3.3.1.js"></script>
+    <script src="../Resources/js/notify.js"></script>
+    <script src="../Resources/js/bootstrap.js"></script>
+</body>
+</html>
+<script>
+    let show = '{{{show-notification}}}';
+    if (show == 'true') {
+           $.notify("{{{message}}}", "{{{class}}}");
+       }
+</script>

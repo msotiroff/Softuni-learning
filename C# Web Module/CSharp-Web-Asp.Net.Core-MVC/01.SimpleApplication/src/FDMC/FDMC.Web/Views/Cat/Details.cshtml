@@ -1,0 +1,17 @@
+﻿@model CatDetailsViewModel
+
+<h2 class="text-center">Details</h2>
+
+<div class="container well">
+    <div class="pull-right">
+        <img src="@Model.ImageUrl" alt="@Model.Name" style="max-height: 120px" />
+    </div>
+    <div class="pull-left">
+        <p class="text-primary">Name: @Model.Name</p>
+        <p>Breed: @Model.Breed</p>
+        <p>Age: @Model.Age</p>
+    </div>
+</div>
+<div>
+    <a asp-action="Index" asp-controller="Home">Back to List</a>
+</div>

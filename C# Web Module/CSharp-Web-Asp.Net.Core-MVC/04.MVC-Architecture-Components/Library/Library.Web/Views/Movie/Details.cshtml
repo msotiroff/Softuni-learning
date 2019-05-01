@@ -1,0 +1,59 @@
+﻿@model MovieDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Movie details</h2>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-4 text-center">
+            <iframe width="560" height="315"
+                    src="https://www.youtube.com/embed/@Model.YouTubeTrailerId"></iframe>
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="card bg-light col-7">
+            <h4>@Model.Title</h4>
+            <br />
+            <p>
+                <b>by </b>
+                @{
+                    var directors = Model.Directors.ToList();
+                    for (int i = 0; i < directors.Count; i++)
+                    {
+                        var director = directors[i];
+                        <a href="/Director/Details/@director.Id">@director.Name</a>
+                        if (i < directors.Count - 1)
+                        {
+                            <span>, </span>
+                        }
+                    }
+                }
+            </p>
+            <p>
+                <b>Description: </b>
+                <br />
+                <div>@Model.Description</div>
+            </p>
+            <p><b>Status: </b>@Model.Status</p>
+            <div class="row">
+                @if (!Model.IsBorrowed)
+                {
+                    <a class="btn btn-success m-1" asp-action="borrow" asp-route-id="@Model.Id">Borrow</a>
+                }
+                else
+                {
+                    <form asp-controller="movie" asp-action="return" method="post">
+                        <input hidden="hidden" type="text" name="movieId" value="@Model.Id" />
+                        <input type="submit" class="btn btn-warning m-1" value="Return Movie" />
+                    </form>
+                }
+
+                <a asp-action="history" asp-route-id="@Model.Id" class="btn btn-info m-1">Show History</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

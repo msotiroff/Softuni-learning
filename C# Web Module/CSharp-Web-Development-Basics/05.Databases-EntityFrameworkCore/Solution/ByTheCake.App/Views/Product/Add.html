@@ -1,0 +1,23 @@
+﻿<a href="/">Back to Home</a>
+<form method="post">
+    <label>Name:</label>
+    <input type="text" name="name" placeholder="Name" />
+    <br />
+    <label>Price:</label>
+    <input type="number" min="0" max="1000" step="0.01" name="price" placeholder="Price" />
+    <br />
+    <label>Image Url:</label>
+    <input type="text" name="image-url" placeholder="Image url" />
+    <br />
+    <input type="submit" value="Add Cake" />
+</form>
+<div style="display: {{{showError}}}; color: red">
+    {{{error}}}
+</div>
+<div style="display: {{{showResult}}}">
+    <p>Name: {{{name}}}</p>
+    <p>Price: {{{price}}}</p>
+    <p>
+        <img src="{{{image-url}}}" height="200" />
+    </p>
+</div>

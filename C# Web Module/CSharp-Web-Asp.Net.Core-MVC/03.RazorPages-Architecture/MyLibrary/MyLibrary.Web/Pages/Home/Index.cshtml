@@ -1,0 +1,93 @@
+﻿@page
+@using System.Text.RegularExpressions;
+@model IndexModel
+@{
+    string Mark(string text)
+    {
+        var pattern = Regex.Escape(Model.SearchTerm.ToLower());
+        if (pattern != "")
+        {
+            var match = Regex.Match(text, pattern, RegexOptions.IgnoreCase);
+
+            var replacement = "<span class='marked'>{0}</span>";
+            var markedText = Regex.Replace(text, pattern, string.Format(replacement, match), RegexOptions.IgnoreCase);
+
+            return markedText;
+        }
+
+        return text;
+    }
+}
+
+<div class="container-fluid text-center">
+    <h1>My Library</h1>
+
+    <a asp-page="/Book/Add" class="btn btn-success">Add new Book</a>
+</div>
+<br />
+
+<div class="container-fluid">
+    <table class="table table-striped table-hover center">
+        <thead>
+            <tr>
+                <th width="30%">Title</th>
+                <th width="50%">Author</th>
+                <th width="20%">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model.Books)
+            {
+                <tr>
+                    <td>
+                        <a href="/Book/Details/@book.Id">@Html.Raw(Mark(book.Title))</a>
+                    </td>
+                    <td>
+                        @for (int i = 0; i < book.Authors.Count; i++)
+                        {
+                            var author = book.Authors[i];
+                            <a asp-page="/author/details" asp-route-id="@author.Id">@Html.Raw(Mark(author.Name))</a>
+                            if (i < book.Authors.Count - 1)
+                            {
+                                <span>, </span>
+                            }
+                        }
+                    </td>
+                    <td>@book.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@{
+    var prevDisabled = !Model.Books.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.Books.HasNextPage ? "disabled" : "";
+    var firstDisabled = Model.Books.PageIndex == 1 ? "disabled" : "";
+    var lastDisabled = Model.Books.TotalPages == Model.Books.PageIndex ? "disabled" : "";
+}
+<div class="text-center">
+    <a asp-route-pageIndex="1"
+       asp-route-searchTerm="@Model.SearchTerm"
+       class="btn btn-light @firstDisabled">
+        First page
+    </a>
+    <a asp-route-pageIndex="@(Model.Books.PageIndex - 1)"
+       asp-route-searchTerm="@Model.SearchTerm"
+       class="btn btn-light @prevDisabled">
+        Previous
+    </a>
+    <span class="btn btn-light">
+        @Model.Books.PageIndex
+    </span>
+    <a asp-route-pageIndex="@(Model.Books.PageIndex + 1)"
+       asp-route-searchTerm="@Model.SearchTerm"
+       class="btn btn-light @nextDisabled">
+        Next
+    </a>
+    <a asp-route-pageIndex="@(Model.Books.TotalPages)"
+       asp-route-searchTerm="@Model.SearchTerm"
+       class="btn btn-light @lastDisabled">
+        Last page
+    </a>
+</div>

@@ -1,0 +1,34 @@
+﻿@page
+@model ReturnBookModel
+
+<h2 class="text-center">Return a book</h2>
+
+<div class="container body-content text-center">
+    <div class="card bg-light col d-flex justify-content-center">
+        <h4 class="text-center">
+            Are you sure you want to return the book "@Model.BookTitle" with status:
+        </h4>
+        <p>
+            <b>Date borrowed</b>: @Model.DateBorrowed
+        </p>
+        <p>
+            <b>Date of expire</b>: @Model.ExpirationDate
+        </p>
+        <p>
+            <b>Borrower</b>: @Model.BorrowerName
+        </p>
+        <div class="form-inline mx-auto">
+            <form method="post">
+                <input asp-for="BookId" hidden="hidden" value="@Model.BookId" />
+                <input type="checkbox" asp-for="ReturnConfirmed" hidden="hidden" value="true" checked />
+                <input type="submit" value="Yes" class="btn btn-success" />
+            </form>
+            <div class="col-1"></div>
+            <form method="post">
+                <input asp-for="BookId" hidden="hidden" value="@Model.BookId" />
+                <input type="checkbox" asp-for="ReturnConfirmed" hidden="hidden" value="false" />
+                <input type="submit" value="No" class="btn btn-warning" />
+            </form>
+        </div>
+    </div>
+</div>

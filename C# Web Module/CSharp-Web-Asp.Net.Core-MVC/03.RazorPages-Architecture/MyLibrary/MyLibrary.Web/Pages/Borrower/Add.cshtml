@@ -1,0 +1,29 @@
+﻿@page
+@model AddModel
+
+<h2 class="text-center">Add a Borrower</h2>
+
+<div class="container body-content">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post">
+                <input type="text" asp-for="ReturnUrl" hidden="hidden" value="@Model.ReturnUrl" />
+                <div class="form-group">
+                    <label class="control-label">Name:</label>
+                    <input asp-for="Name" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label">Address:</label>
+                    <input asp-for="Address" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <br />
+                    <input type="submit" value="Add Borrower" class="btn btn-success" />
+                    <a href="/" class="btn btn-dark">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</div>
+

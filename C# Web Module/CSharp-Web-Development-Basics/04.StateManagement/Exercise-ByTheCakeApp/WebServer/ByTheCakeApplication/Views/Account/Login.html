@@ -1,0 +1,20 @@
+﻿<div style="display:{{{anonymousDisplay}}}">
+    <h2>Login</h2>
+
+    <form method="post">
+        <p>
+            <label>Username:</label>
+            <input type="text" name="Username" placeholder="Username" />
+        </p>
+        <p>
+            <label>Passowrd</label>
+            <input type="password" name="Password" placeholder="Password" />
+        </p>
+        <p>
+            <input type="submit" value="Login" />
+        </p>
+    </form>
+    <div style="display: {{{showError}}}; color: red">
+        {{{error}}}
+    </div>
+</div>

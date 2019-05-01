@@ -1,0 +1,21 @@
+﻿<div class="container">
+    <div class="row justify-content-center">
+        <div class="col col-md-6">
+            <div class="text-center">
+                <h1 class="display-3">Edit post</h1>
+            </div>
+            <hr />
+            <form class="form-group text-center" method="post" action="/admin/editpost">
+                <input type="hidden" name="Id" value="{{{post-id}}}" />
+                <label for="Title">Title</label>
+                <input type="text" class="form-control" name="Title" value="{{{post-title}}}" />
+                <br />
+                <label for="Content">Content</label>
+                <textarea type="text" class="form-control" rows="5" name="Content">{{{post-content}}}</textarea>
+                <br />
+                <input type="submit" value="Update" class="btn btn-warning col-md-5" />
+                <a href="/admin/posts" class="btn btn-dark col-md-5">Cancel</a>
+            </form>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,63 @@
+﻿@model PagesViewModel<CourseBasicServiceModel>
+
+@{
+    ViewData["Title"] = "Lecturer Courses";
+}
+
+<h2>Your courses</h2>
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <label asp-for="SearchToken"></label>
+            <div class="input-group">
+                <input class="form-control" asp-for="@Model.SearchToken" />
+                <span class="input-group-btn">
+                    <input class="btn btn-primary" type="submit" value="Search" />
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+
+@if (!Model.Elements.Any())
+{
+    <h2>No Courses Found.</h2>
+}
+else
+{
+    <table class="table table-bordered table-responsive">
+        <thead>
+            <tr>
+                <th class="text-center col-md-4">Name</th>
+                <th class="text-center col-md-3">Start Date</th>
+                <th class="text-center col-md-3">End Date</th>
+                <th class="text-center col-md-2">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var course in Model.Elements)
+            {
+                <tr class="text-center">
+                    <td><a asp-area="" asp-controller="Courses" asp-action="Details" asp-route-id="@course.Id" asp-route-name="@course.Name">@course.Name</a></td>
+                    <td>@course.StartDate.ToShortDateString()</td>
+                    <td>@course.EndDate.ToShortDateString()</td>
+                    <td><a asp-action="Course" asp-route-id="@course.Id" class="btn btn-default">Students</a></td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    if (Model.Pagination.TotalPages > 1)
+    {
+        string actionLink = string.IsNullOrWhiteSpace(Model.SearchToken)
+                  ? $"/Lecturer?"
+                  : $"/Lecturer?SearchToken={Model.SearchToken}&";
+
+        Model.Pagination.ActionLink = actionLink;
+
+        @Html.Partial("_Pagination", Model.Pagination)
+    }
+}

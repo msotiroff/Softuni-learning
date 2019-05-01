@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20180604174023_Initial.cs" />
+    <Compile Remove="Migrations\20180605174920_UserEmailUniqueConstraintAdded.cs" />
+    <Compile Remove="Migrations\20180605175954_UserEmailUniqueConstraintAdded.cs" />
+    <Compile Remove="Migrations\20180605180729_Initial.cs" />
+    <Compile Remove="Migrations\20180605184923_UserRoleCascadeDeletionAdded.cs" />
+    <Compile Remove="Migrations\20180607182500_GameSizeChangedToDecimalNumber.cs" />
+    <Compile Remove="Migrations\20180607182912_UserEmailUniqueConstraintAdded.cs" />
+    <Compile Remove="Migrations\20180607192317_UserGameDeleteBehaviorChangedToCascade.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="2.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.1.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SoftUniGameStore.Models\SoftUniGameStore.Models.csproj" />
+  </ItemGroup>
+
+</Project>

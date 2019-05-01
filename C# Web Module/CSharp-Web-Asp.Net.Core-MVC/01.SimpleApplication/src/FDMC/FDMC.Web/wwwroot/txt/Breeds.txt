@@ -1,0 +1,134 @@
+[
+  {
+    "Name": "Abyssinian"
+  },
+  {
+    "Name": "American Bobtail"
+  },
+  {
+    "Name": "American Curl"
+  },
+  {
+    "Name": "American Shorthair"
+  },
+  {
+    "Name": "American Wirehair"
+  },
+  {
+    "Name": "Balinese"
+  },
+  {
+    "Name": "Bengal"
+  },
+  {
+    "Name": "Birman"
+  },
+  {
+    "Name": "Bombay"
+  },
+  {
+    "Name": "British Shorthair"
+  },
+  {
+    "Name": "Burmese"
+  },
+  {
+    "Name": "Burmilla"
+  },
+  {
+    "Name": "Chartreux"
+  },
+  {
+    "Name": "Colorpoint Shorthair"
+  },
+  {
+    "Name": "Cornish Rex"
+  },
+  {
+    "Name": "Devon Rex"
+  },
+  {
+    "Name": "Egyptian Mau"
+  },
+  {
+    "Name": "European Burmese"
+  },
+  {
+    "Name": "Exotic"
+  },
+  {
+    "Name": "Havana Brown"
+  },
+  {
+    "Name": "Japanese Bobtail"
+  },
+  {
+    "Name": "Khao Manee"
+  },
+  {
+    "Name": "Korat"
+  },
+  {
+    "Name": "LaPerm"
+  },
+  {
+    "Name": "Lykoi"
+  },
+  {
+    "Name": "Maine Coon Cat"
+  },
+  {
+    "Name": "Manx"
+  },
+  {
+    "Name": "Norwegian Forest Cat"
+  },
+  {
+    "Name": "Ocicat"
+  },
+  {
+    "Name": "Oriental"
+  },
+  {
+    "Name": "Persian"
+  },
+  {
+    "Name": "Ragamuffin"
+  },
+  {
+    "Name": "Ragdoll"
+  },
+  {
+    "Name": "Russian Blue"
+  },
+  {
+    "Name": "Scottish Fold"
+  },
+  {
+    "Name": "Selkirk Rex"
+  },
+  {
+    "Name": "Siamese"
+  },
+  {
+    "Name": "Siberian"
+  },
+  {
+    "Name": "Singapura"
+  },
+  {
+    "Name": "Somali"
+  },
+  {
+    "Name": "Sphynx"
+  },
+  {
+    "Name": "Tonkinese"
+  },
+  {
+    "Name": "Turkish Angora"
+  },
+  {
+    "Name": "Turkish Van"
+  }
+]

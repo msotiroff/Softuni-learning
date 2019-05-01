@@ -1,0 +1,29 @@
+﻿<a href="/">Back to Home</a>
+<div style="display:{{{anonymousDisplay}}}">
+    <h2>Register</h2>
+
+    <form method="post">
+        <p>
+            <label>Username:</label>
+            <input type="text" name="Username" placeholder="Username" required />
+        </p>
+        <p>
+            <label>Full Name:</label>
+            <input type="text" name="FullName" placeholder="Full Name" required />
+        </p>
+        <p>
+            <label>Passowrd</label>
+            <input type="password" name="Password" placeholder="Password" required />
+        </p>
+        <p>
+            <label>Confirm Passowrd</label>
+            <input  type="password" name="ConfirmPassword" placeholder="Confirm Password" required />
+        </p>
+        <p>
+            <input type="submit" value="Register" />
+        </p>
+    </form>
+    <div style="display: {{{showError}}}; color: red">
+        {{{error}}}
+    </div>
+</div>

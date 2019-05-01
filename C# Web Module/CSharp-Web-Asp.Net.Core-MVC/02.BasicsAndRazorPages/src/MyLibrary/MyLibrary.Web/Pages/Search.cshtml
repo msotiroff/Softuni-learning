@@ -1,0 +1,19 @@
+﻿@page
+@model MyLibrary.Web.Pages.SearchModel
+
+<h2>Search results: @Model.SearchResult.SearchTerm</h2>
+<br />
+<ul>
+    @foreach (var author in Model.SearchResult.Authors)
+    {
+        <li>
+            <a href="/Author/Details/@author.Id">@author.Name</a> (author)
+        </li>
+    }
+    @foreach (var book in Model.SearchResult.Books)
+    {
+        <li>
+            <a href="/Book/Details/@book.Id">@book.Title</a> (book)
+        </li>
+    }
+</ul>

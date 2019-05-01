@@ -1,0 +1,15 @@
+﻿<form action="/home/index" method="get" class="catalog-form">
+    <label>Destination:</label>
+    <input type="text" name="Destination" placeholder="Destination">
+    <label>Origin:</label>
+    <input type="text" name="Origin" placeholder="Origin">
+    <label>Departure:</label>
+    <input type="date" name="Departure" placeholder="Departure">
+    <input type="submit" class="search" value="Search">
+
+    <a style="display: {{{adminDisplay}}}" href="/flight/add" class="add-flight">Add Flight +</a>
+</form>
+
+<section class="added-flights">
+    {{{flights}}}
+</section>

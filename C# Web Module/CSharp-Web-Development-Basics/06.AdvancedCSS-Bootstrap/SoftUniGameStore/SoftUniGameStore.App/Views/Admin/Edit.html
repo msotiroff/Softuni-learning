@@ -1,0 +1,73 @@
+﻿<main class="col-4 ml-auto mr-auto text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center"><h1 class="display-3">Edit Game - {{{Title}}}</h1></div>
+                <br />
+
+                <div style="display:{{{showError}}}">
+                    <div class="alert alert-danger" role="alert">
+                        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                        {{{error}}}
+                    </div>
+                </div>
+
+                <form method="post" action="/Admin/EditConfirmed">
+                    <input type="text" name="Id" value="{{{Id}}}" hidden="hidden" />
+                    <div class="form-group row">
+                        <label class="form-control-label">Title</label>
+                        <input pattern="[A-Z].{3,100}" name="Title" class="form-control"
+                               placeholder="Enter Game Title" value="{{{Title}}}" />
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="form-control-label">Description</label>
+                        <textarea class="form-control" name="Description" placeholder="Enter Game Description" minlength="20">{{{Description}}}</textarea>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="form-control-label">Thumbnail</label>
+                        <input type="url" class="form-control" name="Thumbnail" placeholder="Enter URL to Image" value="{{{Thumbnail}}}" />
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="form-control-label">Price</label>
+                        <div class="input-group">
+
+                            <input type="number" name="Price" step="0.01" min="0" class="form-control" placeholder="Enter Price" value="{{{Price}}}" />
+                            <span class="input-group-addon">&euro;</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="form-control-label">Size</label>
+                        <div class="input-group">
+
+                            <input type="number" name="Size" step="0.1" min="0" class="form-control" placeholder="Enter Size" value="{{{Size}}}" />
+                            <span class="input-group-addon">GB</span>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="form-control-label">YouTube Video URL</label>
+                        <div class="input-group">
+                            <span class="input-group-addon">https://www.youtube.com/watch?v=</span>
+                            <input type="text" name="Trailer" class="form-control" minlength="11" maxlength="11" value="{{{Trailer}}}" />
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <label class="form-control-label">Release Date</label>
+                        <input type="date" name="ReleaseDate" class="form-control" placeholder="yyyy-MM-dd" value="{{{ReleaseDate}}}" />
+                    </div>
+
+                    <input type="submit" class="btn btn-outline-warning btn-lg btn-block"
+                           value="Edit Game" />
+                </form>
+                <br />
+            </div>
+        </div>
+    </div>
+</main>

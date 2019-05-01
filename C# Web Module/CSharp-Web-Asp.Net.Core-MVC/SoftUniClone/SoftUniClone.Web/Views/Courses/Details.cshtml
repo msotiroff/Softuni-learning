@@ -1,0 +1,101 @@
+﻿@model CourseDetailsViewModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<div class="row">
+    <div class="col-md-offset-1 col-md-10">
+        <br />
+
+        <div>
+            <a class="btn btn-default" asp-action="Index">Back To All Courses</a>
+        </div>
+        <br />
+
+        @if (User.Identity.IsAuthenticated)
+            {
+                if (Model.IsStudentEnrolledInCourse && Model.Course.EndDate.Date == DateTime.UtcNow.AddDays(1).Date)
+                {
+
+                <div>
+                    <form asp-action="SubmitExamSubmission" asp-route-id="@Model.Course.Id" method="post" enctype="multipart/form-data">
+                        <input type="file" name="ExamSubmission" accept=".zip" />
+                        <small>* Upload your exam (only .zip files allowed)</small>
+                        <br />
+
+                        <input type="submit" value="Upload" class="btn btn-sm btn-success" />
+                    </form>
+                </div>
+                <br />
+            }
+
+            if (Model.Course.StartDate > DateTime.UtcNow)
+            {
+                if (Model.IsStudentEnrolledInCourse)
+                {
+                    <form asp-action="SignOut" asp-route-id="@Model.Course.Id" method="post">
+                        <input type="submit" value="Sign Out" class="btn btn-success" />
+                    </form>
+                }
+                else
+                {
+                    <form asp-action="SignUp" asp-route-id="@Model.Course.Id" method="post">
+                        <input type="submit" value="Sign Up" class="btn btn-success" />
+                    </form>
+                }
+            }
+            else
+            {
+                if (Model.Course.EndDate > DateTime.UtcNow)
+                {
+
+                    <p>This course has already started.</p>
+                }
+                else
+                {
+                    <p>This course has already finished.</p>
+
+                }
+            }
+
+        }
+        else
+        {
+
+            if (Model.Course.StartDate > DateTime.UtcNow)
+            {
+                <p>To sign up in this course, please <a asp-controller="Account" asp-action="Login" asp-route-returnUrl="@Context.Request.Path">login</a>.</p>
+            }
+            else
+            {
+                if (Model.Course.EndDate < DateTime.UtcNow)
+                {
+
+                    <p>This course has already started.</p>
+                }
+                else
+                {
+                    <p>This course has already finished.</p>
+
+                }
+            }
+        }
+        <br />
+
+        <div class="text-center">
+            <h1>@Model.Course.Name</h1>
+        </div>
+        <br />
+        <div class="text-justify">
+            <p>@Model.Course.Description</p>
+        </div>
+        <br />
+        <div class="text-right">
+            <p><em>Lecturer: @Model.Course.Author</em></p>
+            <p><em>Enrolled Students - @Model.Course.Students</em></p>
+            <p><em>Start Date: @Model.Course.StartDate.ToShortDateString()</em></p>
+            <p><em>End Date: @Model.Course.EndDate.ToShortDateString()</em></p>
+        </div>
+    </div>
+</div>

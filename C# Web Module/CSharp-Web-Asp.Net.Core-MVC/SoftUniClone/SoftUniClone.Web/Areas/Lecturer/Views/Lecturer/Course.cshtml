@@ -1,0 +1,67 @@
+﻿@model CourseWithStudentsViewModel
+
+@{
+    ViewData["Title"] = $"Students in {Model.Course.Name}";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<div>
+    <a class="btn btn-default" asp-action="Index">Back To Your Courses</a>
+</div>
+<br />
+<br />
+
+@if (!Model.Students.Any())
+{
+    <h2>No students in this course.</h2>
+}
+else
+{
+    <div class="container">
+        <div class="row">
+            <table class="table table-bordered table-responsive">
+                <thead>
+                    <tr>
+                        <th class="text-center col-md-3">Name</th>
+                        <th class="text-center col-md-3">Email</th>
+                        <th class="text-center col-md-1">Grade</th>
+                        @if (Model.Course.EndDate < DateTime.UtcNow.AddDays(1))
+                        {
+                            <th class="text-center col-md-2">Exams</th>
+                            <th class="text-center col-md-2">Actions</th>
+                        }
+                    </tr>
+                </thead>
+                <tbody>
+                    @foreach (var student in Model.Students)
+                    {
+                        <tr class="text-center">
+                            <td>@student.Name</td>
+                            <td>@student.Email</td>
+                            <td>@(student.Grade == null ? "No Grade" : student.Grade.ToString())</td>
+                            @if (Model.Course.EndDate < DateTime.UtcNow.AddDays(1))
+                            {
+                                <td>
+                                    <a asp-area="Lecturer" asp-controller="Lecturer" asp-action="DownloadExamSubmission" asp-route-id="@Model.Course.Id" asp-route-studentId="@student.Id">Download</a>
+                                </td>
+                                <td class="col-md-12">
+                                    <form asp-action="AssessStudent" asp-route-id="@Model.Course.Id" method="post">
+
+                                        <div class="col-md-8">
+                                            <select asp-items="@Html.GetEnumSelectList<Grade>()" name="Grade" class="form-control"></select>
+                                        </div>
+                                        <input type="hidden" name="StudentId" value="@student.Id" />
+                                        <div class="col-md-4 pull-right">
+                                            <input type="submit" class="btn btn-success" value="Assess" />
+                                        </div>
+                                    </form>
+                                </td>
+                            }
+                        </tr>
+                    }
+                </tbody>
+            </table>
+        </div>
+    </div>
+}

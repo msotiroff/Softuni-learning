@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Airport</title>
+    <meta charset="UTF-8">
+    <link href="../Resources/css/bootstrap.css" rel="stylesheet" />
+    <link href="../Resources/css/style.css" rel="stylesheet" />
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="left-container">
+                <ul style="display: {{{guestDisplay}}}">
+                    <li><a href="/account/login">Login</a></li>
+                    <li><a href="/account/register">Register</a></li>
+                </ul>
+                <ul style="display: {{{userDisplay}}}">
+                    <li><a href="/account/profile">Flights</a></li>
+                    <li><a href="/shopping/cart">My Tickets</a></li>
+                </ul>
+            </div>
+            <div  style="display: {{{userDisplay}}}" class="right-container">
+                <span>Welcome, {{{username}}} |</span>
+                    <a href="/account/logout" class="log-out">Logout</a>
+                <a href="/shopping/cart"><img src="../Resources/png/cart.png" alt="" class="cart"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        {{{content}}}
+
+        <footer>
+            SoftUni Airlines
+        </footer>
+    </main>
+
+    <script src="../Resources/js/jquery-3.3.1.js"></script>
+    <script src="../Resources/js/bootstrap.js"></script>
+    <script src="../Resources/js/notify.js"></script>
+</body>
+</html>
+<script>
+    let show = '{{{show-notification}}}';
+    if (show == 'true') {
+           $.notify("{{{message}}}", "{{{class}}}");
+       }
+</script>

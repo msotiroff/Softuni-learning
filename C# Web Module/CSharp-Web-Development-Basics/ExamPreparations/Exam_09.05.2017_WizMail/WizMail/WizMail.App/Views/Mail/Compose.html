@@ -1,0 +1,30 @@
+﻿<br />
+<div class="container">
+    <div class="row">
+        <div class="jumbotron col-sm-12">
+            <form method="post" action="/mail/compose">
+                <div class="form-group">
+                    <label>Recipients</label>
+                    <input name="Recipients" type="text" class="form-control">
+                </div>
+                <div class="form-group">
+                    <label>Subject</label>
+                    <input name="Title" type="text" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <label>Message</label>
+                    <textarea name="Message" rows="5" type="text" class="form-control"></textarea>
+                </div>
+                <div class="form-group">
+                    <label>Attachment</label>
+                    <input name="Attachment" type="text" class="form-control" placeholder="URL">
+                </div>
+                <div class="form-group">
+                    <input class="btn btn-primary" type="submit" name="Send" value="Send">
+                    <input class="btn btn-primary" type="submit" name="Save" value="Save">
+                    <a href="/mail/box" class="btn btn-primary">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

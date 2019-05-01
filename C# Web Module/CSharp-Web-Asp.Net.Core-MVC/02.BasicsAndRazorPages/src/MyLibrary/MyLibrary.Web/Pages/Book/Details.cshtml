@@ -1,0 +1,26 @@
+﻿@page "{id:int}"
+@model MyLibrary.Web.Pages.Book.DetailsModel;
+
+<h2 class="text-center">Book details</h2>
+<hr />
+<div class="container body-content">
+    <div class="row">
+        <div class="pull-left col-md-3">
+            <img width="250" src="@Model.BookViewModel.CoverImageUrl" alt="@Model.BookViewModel.Title" />
+        </div>
+        <div class="col-md-9">
+            <h4>@Model.BookViewModel.Title</h4>
+            <br />
+            <p>
+                by @foreach (var author in Model.BookViewModel.Authors)
+                {
+                    <a href="/Author/Details/@author.Id">@author.Name</a>
+                }
+            </p>
+            <p>
+                @Model.BookViewModel.Description
+            </p>
+            <p><strong>Status:</strong>@Model.BookViewModel.Status</p>
+        </div>
+    </div>
+</div>

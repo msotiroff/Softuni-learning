@@ -1,0 +1,43 @@
+﻿@model MovieCreateViewModel
+
+@{
+    ViewData["Title"] = "Create";
+}
+
+<h2 class="text-center">Create new Movie</h2>
+
+<div class="container body-content">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <div class="form-group">
+                    <label class="control-label font-weight-bold">Title:</label>
+                    <input asp-for="Title" type="text" class="form-control" />
+                    <span asp-validation-for="Title" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label font-weight-bold">Description:</label>
+                    <textarea asp-for="Description" rows="5" class="form-control"></textarea>
+                    <span asp-validation-for="Description" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label font-weight-bold">You tube link:</label>
+                    <input asp-for="YouTubeLink" type="url" class="form-control" />
+                    <span asp-validation-for="YouTubeLink" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label font-weight-bold">Directors:</label>
+                    <select class="form-control" asp-for="@Model.SelectedDirectors" asp-items="@Model.AllDirectors" multiple="multiple"></select>
+                    <br />
+                    <a class="btn btn-dark" asp-controller="director" asp-action="create">Add new director</a>
+                </div>
+                <div class="form-group">
+                    <br />
+                    <input type="submit" value="Add Movie" class="btn btn-success" />
+                    <a href="/" class="btn btn-dark">Cancel</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

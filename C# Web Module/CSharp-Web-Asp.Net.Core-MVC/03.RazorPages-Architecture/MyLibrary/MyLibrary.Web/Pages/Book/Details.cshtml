@@ -1,0 +1,51 @@
+﻿@page "{id:int}"
+@model DetailsModel;
+
+<h2>Book details</h2>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <img width="250" src="@Model.BookViewModel.CoverImageUrl" alt="@Model.BookViewModel.Title" />
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="card bg-light col-8">
+            <h4>@Model.BookViewModel.Title</h4>
+            <br />
+            <p>
+                <b>by </b>
+                @{
+                    var authors = Model.BookViewModel.Authors.ToList();
+                    for (int i = 0; i < authors.Count; i++)
+                    {
+                        var author = authors[i];
+                        <a href="/Author/Details/@author.Id">@author.Name</a>
+                        if (i < authors.Count - 1)
+                        {
+                            <span>, </span>
+                        }
+                    }
+                }
+            </p>
+            <p>
+                <b>Description: </b>
+                <br />
+                <div>@Model.BookViewModel.Description</div>
+            </p>
+            <p><b>Status: </b>@Model.BookViewModel.Status</p>
+            <p>
+                @if (!Model.BookViewModel.IsBorrowed)
+                {
+                    <a class="btn btn-success" asp-page="/book/borrow" asp-route-id="@Model.BookViewModel.Id">Borrow</a>
+                }
+                else
+                {
+                    <a class="btn btn-info" asp-page="/book/return" asp-route-id="@Model.BookViewModel.Id">Return</a>
+                }
+
+                <a asp-page="/book/status" asp-route-id="@Model.BookViewModel.Id" class="btn btn-info">Show History</a>
+            </p>
+        </div>
+    </div>
+</div>
+

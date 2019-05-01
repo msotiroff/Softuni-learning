@@ -1,0 +1,24 @@
+﻿@inject Microsoft.AspNetCore.Http.IHttpContextAccessor contextAccessor;
+
+@{
+    var username = SessionExtensions.GetString(contextAccessor.HttpContext.Session, WebConstants.CurrentUserSessionKey);
+    if (username != null)
+    {
+        <ul class="navbar-nav ml-3">
+            <li class="nav-item">
+                <a href="#" class="nav-link">Hello, @username!</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="account" asp-action="logout">Log out</a>
+            </li>
+        </ul>
+    }
+    else
+    {
+        <ul class="navbar-nav ml-3">
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="account" asp-action="login">Log in</a>
+            </li>
+        </ul>
+    }
+}

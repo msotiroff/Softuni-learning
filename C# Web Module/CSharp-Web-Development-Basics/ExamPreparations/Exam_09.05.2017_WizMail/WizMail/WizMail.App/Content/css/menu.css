@@ -1,0 +1,22 @@
+.navbar{
+    display: inline;
+    background-color: brown;
+}
+
+.form-inline {
+    margin: 0;
+}
+
+.btn-outline-secondary{
+    color: black;
+    background-color: white;
+    border:none;
+}
+
+.btn-outline-secondary:hover{
+    background-color: black;
+}
+
+.navbar-inverse .navbar-nav .nav-link {
+    color: white;
+}

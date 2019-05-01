@@ -1,0 +1,35 @@
+﻿@model HomeIndexViewModel
+
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="jumbotron">
+    <div class="text-center">
+
+        <div class="home-text">
+            <div>
+                <h1>Welcome to SoftUni Clone!</h1>
+            </div>
+
+            <div>
+                @if (User.Identity.IsAuthenticated && User.IsInRole(Constants.AdministratorRole))
+                {
+                    <a class="btn btn-default btn-lg" asp-area="Admin" asp-controller="Users" asp-action="Index">Users</a>
+                }
+                @if (User.Identity.IsAuthenticated && User.IsInRole(Constants.LecturerRole))
+                {
+                    <a class="btn btn-default btn-lg" asp-area="Lecturer" asp-controller="Lecturer" asp-action="Index">Lecturer</a>
+                }
+                <a class="btn btn-default btn-lg" asp-area="" asp-controller="Courses" asp-action="Index">Courses</a>
+            </div>
+
+            <br />
+            <br />
+
+            <div>
+                <img src="~/images/codingforkids.jpg" alt="softuni-clone-photo" width="1000" height="600" />
+            </div>
+        </div>
+    </div>
+</div>

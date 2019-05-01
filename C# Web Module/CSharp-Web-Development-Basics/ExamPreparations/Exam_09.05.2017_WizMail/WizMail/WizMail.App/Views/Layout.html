@@ -1,0 +1,65 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/form.css" rel="stylesheet" />
+    <link href="css/mail.css" rel="stylesheet" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <title>Menu</title>
+</head>
+<body>
+    <header>
+        <div class="container-fluid">
+            <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top">
+                <div class="row">
+                    <div class="col-sm-2 col-md-2 hidden-xs-down">
+                        <a class="navbar-brand" href="/">WizMail</a>
+                    </div>
+                    <div style="display: {{{userDisplay}}}" class="col-sm-5">
+                        <div class="collapse navbar-collapse" id="navbarSearch">
+                            <form class="form-inline" method="get" action="/mail/box">
+                                <input class="form-control mr-sm-2" placeholder="Search" type="text" name="searchTerm" value=""/>
+                                <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Search</button>
+                            </form>
+                        </div>
+                    </div>
+                    <div style="display: {{{guestDisplay}}}" class="col-sm-2 navbar-toggler-right">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/login">Login</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/register">Register</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div style="display: {{{userDisplay}}}" class="col-sm-3  navbar-toggler-right">
+                        <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                            <li class="nav-item">
+                                <a class="nav-link" href="/account/logout">Log Out({{{fullname}}})</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <br />
+    {{{content}}}
+    <br />
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/notify.js"></script>
+
+    <script type="text/javascript">
+    let show = '{{{show-notification}}}';
+    if (show == 'true') {
+           $.notify("{{{message}}}", "{{{class}}}");
+       }
+    </script>
+</body>
+</html>

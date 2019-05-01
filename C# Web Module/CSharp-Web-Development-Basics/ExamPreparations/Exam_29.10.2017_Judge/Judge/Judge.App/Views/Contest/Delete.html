@@ -1,0 +1,20 @@
+﻿<main class="col-4 ml-auto mr-auto text-center">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="text-center"><h1 class="display-3">{{{Name}}}</h1></div>
+                <br />
+                <form action="/contest/delete" method="post">
+                    <div class="form-group row">
+                        <input type="hidden" name="Id" value="{{{Id}}}" />
+                        <label>Contest name</label>
+                        <input type="text" readonly="readonly" class="form-control" name="Name" value="{{{Name}}}" placeholder="Enter contest name" />
+                    </div>
+                    <input type="submit" class="btn btn-outline-bg-dark btn-lg btn-block" value="Delete" />
+                    <a href="/contest/all" class="btn btn-outline-bg-dark btn-lg btn-block">Back</a>
+                </form>
+                <br />
+            </div>
+        </div>
+    </div>
+</main>

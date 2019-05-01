@@ -1,0 +1,41 @@
+﻿<main>
+    <div class="container-fluid">
+        <div class="row">
+            <nav class="col-sm-3 col-md-2 hidden-xs-down bg-faded sidebar">
+                <a id="compose" class="btn btn-primary" href="/mail/compose">Compose</a>
+                <br />
+                <br />
+                <ul class="nav nav-pills flex-column red">
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mail/box">Inbox<span>{{{unread}}}</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mail/box?internalBox=Sent">Sent</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mail/box?internalBox=Draft">Drafts<span>({{{drafts}}})</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/mail/box?internalBox=Trash">Trash</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <main class="col-sm-9 offset-sm-3 col-md-10 offset-md-2 pt-3 mail-area">
+            <table class="table table-inverse">
+                <thead>
+                    <tr>
+                        <th>Subject</th>
+                        <th>Message</th>
+                        <th>Status</th>
+                        <th>Date</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{{all-emails}}}
+                </tbody>
+            </table>
+        </main>
+    </div>
+</main>

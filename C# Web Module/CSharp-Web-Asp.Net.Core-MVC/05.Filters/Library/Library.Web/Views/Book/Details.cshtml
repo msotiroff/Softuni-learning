@@ -1,0 +1,57 @@
+﻿@model BookDetailsViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h2>Book details</h2>
+<hr />
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-2">
+            <img width="250" src="@Model.CoverImageUrl" alt="@Model.Title" />
+        </div>
+        <div class="col-lg-1"></div>
+        <div class="card bg-light col-8">
+            <h4>@Model.Title</h4>
+            <br />
+            <p>
+                <b>by </b>
+                @{
+                    var authors = Model.Authors.ToList();
+                    for (int i = 0; i < authors.Count; i++)
+                    {
+                        var author = authors[i];
+                        <a href="/Author/Details/@author.Id">@author.Name</a>
+                        if (i < authors.Count - 1)
+                        {
+                            <span>, </span>
+                        }
+                    }
+                }
+            </p>
+            <p>
+                <b>Description: </b>
+                <br />
+                <div>@Model.Description</div>
+            </p>
+            <p><b>Status: </b>@Model.Status</p>
+            <div class="row">
+                @if (!Model.IsBorrowed)
+                {
+                    <a class="btn btn-success m-1" asp-action="borrow" asp-route-id="@Model.Id">Borrow</a>
+                }
+                else
+                {
+                    <form asp-controller="book" asp-action="return" method="post">
+                        <input hidden="hidden" type="text" name="bookId" value="@Model.Id" />
+                        <input type="submit" class="btn btn-warning m-1" value="Return Book" />
+                    </form>
+                }
+
+                <a asp-action="history" asp-route-id="@Model.Id" class="btn btn-info m-1">Show History</a>
+            </div>
+        </div>
+    </div>
+</div>
+
+

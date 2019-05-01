@@ -1,0 +1,32 @@
+﻿@page "{id:int}"
+@model MyLibrary.Web.Pages.Book.StatusModel
+
+<h2 class="text-center">Borrowing history</h2>
+
+<div class="container">
+    <table class="table text-center table-striped table-responsive table-hover center">
+        <thead>
+            <tr>
+                <th>Book title</th>
+                <th>Borrower</th>
+                <th>Borrower address</th>
+                <th>Date borrowed</th>
+                <th>Date returned</th>
+                <th>Date of expire</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var status in Model.Statuses)
+            {
+            <tr>
+                <td>@status.BookTitle</td>
+                <td>@status.BorrowerName</td>
+                <td>@status.BorrowerAddress</td>
+                <td>@status.DateBorrowed</td>
+                <td>@status.DateReturned</td>
+                <td>@status.ExpirationDate</td>
+            </tr>
+            }
+        </tbody>
+    </table>
+</div>

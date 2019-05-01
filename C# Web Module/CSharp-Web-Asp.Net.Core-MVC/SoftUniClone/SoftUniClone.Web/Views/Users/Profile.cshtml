@@ -1,0 +1,89 @@
+﻿@model PageViewModel<UserProfileServiceModel>
+
+@{
+    ViewData["Title"] = "Profile";
+}
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-offset-3 col-md-6">
+            <br />
+
+            <h2 class="text-center">@ViewData["Title"]</h2>
+
+            @if (Model.Element.Username == User.Identity.Name)
+            {
+                <div class="text-center">
+                    <a asp-action="EditProfile" asp-route-username="@Model.Element.Username" class="btn btn-default">Edit Profile</a>
+                    <a asp-action="ChangePassword" asp-route-username="@Model.Element.Username" class="btn btn-default">Change Password</a>
+                </div>
+            }
+
+            <br />
+
+            <table class="table table-bordered table-responsive">
+                <tr>
+                    <th>Username:</th>
+                    <td>@Model.Element.Username</td>
+                </tr>
+                <tr>
+                    <th>Name:</th>
+                    <td>@Model.Element.Name</td>
+                </tr>
+                <tr>
+                    <th>Email:</th>
+                    <td>@Model.Element.Email</td>
+                </tr>
+                <tr>
+                    <th>Birthdate:</th>
+                    <td>@Model.Element.Birthdate.ToShortDateString()</td>
+                </tr>
+            </table>
+
+            @if (!Model.Element.Courses.Any())
+            {
+                <h3 class="text-center">You don't have any courses.</h3>
+            }
+            else
+            {
+                <table class="table table-bordered table-responsive">
+                    <thead>
+                        <tr>
+                            <th>Course</th>
+                            <th>Grade</th>
+                            <th>Certificate</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var course in Model.Element.Courses)
+                        {
+                            <tr>
+                                <td class="col-md-10"><a asp-controller="Courses" asp-action="Details" asp-route-id="@course.Id" asp-route-name="@course.Name.ToFriendlyUrl()">@course.Name</a></td>
+                                <td class="col-md-2">@(course.Grade == null ? "No Grade" : course.Grade.ToString())</td>
+                                <td>
+                                    @if (course.Grade == Grade.A || course.Grade == Grade.B || course.Grade == Grade.C)
+                                    {
+                                        <a asp-action="DownloadCertificate" asp-route-id="@course.Id">Download</a>
+                                    }
+                                    else
+                                    {
+                                        @:Not applicable
+                                    }
+                                </td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+
+                if (Model.Pagination.TotalPages > 1)
+                {
+                    string actionLink = $"/users{Model.Element.Username.ToLower()}?";
+
+                    Model.Pagination.ActionLink = actionLink;
+
+                    @Html.Partial("_Pagination", Model.Pagination)
+                }
+            }
+        </div>
+    </div>
+</div>

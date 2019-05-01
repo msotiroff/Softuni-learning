@@ -1,0 +1,19 @@
+﻿@page "{id:int}"
+@model MyLibrary.Web.Pages.Author.DetailsModel
+
+<h2>Author Info</h2>
+<hr />
+
+<div class="container">
+    <div class="col-md-4">
+        <h3>@Model.Author.Name</h3>
+        <ul>
+            @foreach (var book in Model.Author.Books)
+            {
+                <li>
+                    <a href="/Book/Details/@book.Id">@book.Title</a><span> (@book.Status)</span>
+                </li>
+            }
+        </ul>
+    </div>
+</div>

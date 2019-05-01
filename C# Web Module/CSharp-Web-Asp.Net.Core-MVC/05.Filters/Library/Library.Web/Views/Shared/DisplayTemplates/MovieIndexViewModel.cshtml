@@ -1,0 +1,20 @@
+﻿@model MovieIndexViewModel
+
+<tr>
+    <td>
+        <a href="/Movie/Details/@Model.Id">@Html.Raw(Model.Title)</a>
+    </td>
+    <td>
+        @for (int i = 0; i < Model.Originators.Count; i++)
+        {
+            var director = Model.Originators[i];
+            <a asp-controller="director" asp-action="details" asp-route-id="@director.Id">@Html.Raw(director.Name)</a>
+            if (i < Model.Originators.Count - 1)
+            {
+                <span>, </span>
+            }
+        }
+    </td>
+    <td>Movie</td>
+    <td>@Model.Status</td>
+</tr>

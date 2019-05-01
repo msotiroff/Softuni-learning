@@ -1,0 +1,26 @@
+﻿@page
+@model MyLibrary.Web.Pages.Author.CreateModel
+@{
+    TempData["returnUrl"] = Model.ReturnUrl;
+}
+
+<h2 class="text-center">Create new author</h2>
+
+<div class="container body-content">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post">
+                <label class="font-weight-bold">Author full name</label>
+
+                @if (!string.IsNullOrWhiteSpace(Model.ErrorMessage))
+                {
+                    <div class="alert text-danger">@Model.ErrorMessage</div>
+                }
+
+                <input type="text" asp-for="Name" class="form-control" />
+                <br />
+                <input type="submit" class="btn btn-success" />
+            </form>
+        </div>
+    </div>
+</div>

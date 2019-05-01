@@ -1,0 +1,67 @@
+﻿@model PagesViewModel<CourseBasicServiceModel>
+
+@{
+    ViewData["Title"] = "All Courses";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+@if (User.IsInRole(Constants.AdministratorRole))
+{
+    <div>
+        <a class="btn btn-default" href="/admin/courses/create">Add Course</a>
+    </div>
+    <br />
+}
+
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <label asp-for="SearchToken"></label>
+            <div class="input-group">
+                <input class="form-control" asp-for="@Model.SearchToken" />
+                <span class="input-group-btn">
+                    <input class="btn btn-primary" type="submit" value="Search" />
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+
+@if (!Model.Elements.Any())
+{
+    <h2>No Courses Found.</h2>
+}
+else
+{
+    <div class="row">
+        @foreach (var course in Model.Elements)
+        {
+            <div class="col-md-6">
+                <div class="card">
+                    <div class="card-block">
+                        <h3 class="card-title">@course.Name</h3>
+                        <p class="card-text text-justify">
+                            @course.Resume
+                            <a asp-action="Details" asp-route-id="@course.Id" asp-route-name="@course.Name.ToFriendlyUrl()">Read More</a>
+                        </p>
+                        <p class="card-text"><em>Start Date: @course.StartDate.ToShortDateString()</em></p>
+                        <p class="card-text"><em>End Date: @course.EndDate.ToShortDateString()</em></p>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+
+    if (Model.Pagination.TotalPages > 1)
+    {
+        string actionLink = string.IsNullOrWhiteSpace(Model.SearchToken)
+                ? $"/courses?"
+                : $"/courses?SearchToken={Model.SearchToken}&";
+
+        Model.Pagination.ActionLink = actionLink;
+
+        @Html.Partial("_Pagination", Model.Pagination)
+    }
+}

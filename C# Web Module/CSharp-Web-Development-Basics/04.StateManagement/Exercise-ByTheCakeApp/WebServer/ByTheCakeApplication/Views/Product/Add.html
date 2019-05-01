@@ -1,0 +1,17 @@
+﻿<form method="post">
+    Name:
+    <input type="text" name="name" placeholder="Name" />
+    <br />
+    Price:
+    <input type="number" min="0" max="1000" step="0.01" name="price" placeholder="Price" />
+    <br />
+    <input type="submit" value="Add Cake" />
+</form>
+<div style="display: {{{showError}}}; color: red">
+    {{{error}}}
+</div>
+<div style="display: {{{showResult}}}">
+    <p>Name: {{{name}}}</p>
+    <p>Price: {{{price}}}</p>
+</div>
+<a href="/">Back to home page</a>

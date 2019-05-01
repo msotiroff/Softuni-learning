@@ -1,0 +1,27 @@
+﻿<h1 class="text-center">Delete Product</h1>
+<hr class="bg-secondary half-width" />
+<form class="mx-auto half-width" method="post" action="/product/delete">
+    <input type="text" hidden="hidden" name="Id" value="{{{product-id}}}" />
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="Name" value="{{{product-name}}}">
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="number" step="0.01" class="form-control" id="price" name="Price" value="{{{product-price}}}">
+    </div>
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea class="form-control" id="description" name="Description">{{{product-description}}}</textarea>
+    </div>
+    <div class="text-center">
+        <label for="description">Product type</label>
+        <hr />
+        {{{product-types}}}
+    </div>
+    <br />
+    <div class="button-holder d-flex justify-content-center">
+        <button type="submit" class="btn chushka-bg-color m-1">Delete</button>
+        <a class="btn chushka-bg-color m-1" href="/">Cancel</a>
+    </div>
+</form>

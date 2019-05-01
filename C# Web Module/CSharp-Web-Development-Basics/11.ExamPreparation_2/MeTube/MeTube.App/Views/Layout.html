@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>MeTube</title>
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <nav class="navbar navbar-toggleable-md navbar-dark bg-color-dark">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand h4" href="/">MeTube&trade;</a>
+
+            <div class="collapse navbar-collapse justify-content-end row" id="navbarSupportedContent">
+                <ul style="display: {{{guestDisplay}}} " class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/account/login">Login</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/account/register">Register</a>
+                    </li>
+                </ul>
+                <ul style="display: {{{userDisplay}}} " class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/account/profile">Profile</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/tube/upload">Upload</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link h5" href="/account/logout">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <hr class="my-3" />
+        {{{content}}}
+        <hr class="my-3" />
+        <footer class="footer py-3">
+            <div class="container-fluid">
+                <div class="container-fluid text-center">&copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.</div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/notify.js"></script>
+    <script type="text/javascript">
+    let show = '{{{show-notification}}}';
+    if (show == 'true') {
+           $.notify("{{{message}}}", "{{{class}}}");
+       }
+    </script>
+</body>
+</html>
+

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mod Panel</title>
+    <link href="css/bootstrap.css" rel="stylesheet" />
+    <link href="css/toastr.min.css" rel="stylesheet" />
+</head>
+<body>
+    <nav class="navbar navbar-expand-md navbar-dark bg-primary">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+                    data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <a class="navbar-brand" href="/">Mod Panel</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav col-10">
+                    <li class="nav-item dropdown" style="display: {{{adminDisplay}}}">
+                        <a class="nav-link dropdown-toggle" href="#" id="AdminDropdownMenuLink"
+                           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Admin
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                            <a class="dropdown-item" href="/Admin/Logs">Logs</a>
+                            <a class="dropdown-item" href="/Admin/Posts">Posts</a>
+                            <a class="dropdown-item" href="/Admin/Users">Users</a>
+                        </div>
+                    </li>
+                    <li style="display: {{{userDisplay}}}" class="nav-item">
+                        <form class="form-inline my-2 my-lg-0" method="get" action="/home/index">
+                            <input class="form-control mr-sm-2" type="text" name="searchTerm" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-dark mr-3 my-2 my-sm-0" type="submit">Search</button>
+                        </form>
+                    </li>
+                </ul>
+                <ul class="navbar-nav col-3">
+                    <li style="display: {{{userDisplay}}}" class="nav-item">
+                        <a class="nav-link" href="/Post/Create">New post</a>
+                    </li>
+                    <li style="display: {{{userDisplay}}}" class="nav-item">
+                        <a class="nav-link" href="/Account/Logout">Logout</a>
+                    </li>
+                    <li style="display: {{{guestDisplay}}}" class="nav-item">
+                        <a class="nav-link" href="/Account/Login">Login</a>
+                    </li>
+                    <li style="display: {{{guestDisplay}}}" class="nav-item">
+                        <a class="nav-link" href="/Account/Register">Register</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+    <main class="container">
+        {{{content}}}
+    </main>
+    <footer>
+        <div class="container modal-footer">
+            <p>&copy; 2018 - Software University</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/notifier.js"></script>
+
+    <script>
+        let show = '{{{show-notification}}}';
+        if (show == 'true') {
+            notifier.showMessage("{{{message}}}", "{{{class}}}");
+        }
+    </script>
+</body>
+</html>

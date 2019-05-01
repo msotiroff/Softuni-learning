@@ -1,0 +1,41 @@
+﻿@model IEnumerable<FDMC.Web.Models.CatListingViewModel>
+
+<h2 class="text-center">All cats</h2>
+
+<p class="text-center">
+    <a asp-action="Create" asp-controller="Cat" class="btn btn-default">Create New</a>
+</p>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Image
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Breed)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var cat in Model) {
+        <tr>
+            <td>
+                <img src="@cat.ImageUrl" alt="@cat.Breed + Cat" style="max-height: 80px" />
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => cat.Name)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => cat.Breed)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", "Cat", new { id=cat.Id })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

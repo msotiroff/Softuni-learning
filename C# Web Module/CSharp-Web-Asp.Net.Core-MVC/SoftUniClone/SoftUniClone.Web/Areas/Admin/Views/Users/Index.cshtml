@@ -1,0 +1,87 @@
+﻿@model AdminPagesViewModel
+@{
+    ViewData["Title"] = "All Users";
+}
+
+<h2>@ViewData["Title"]</h2>
+
+<br />
+
+<div class="row">
+    <div class="col-md-4">
+        <form>
+            <label asp-for="SearchToken"></label>
+            <div class="input-group">
+                <input class="form-control" asp-for="@Model.SearchToken" />
+                <span class="input-group-btn">
+                    <input class="btn btn-primary" type="submit" value="Search" />
+                </span>
+            </div>
+        </form>
+    </div>
+</div>
+<br />
+
+@if (!Model.Elements.Any())
+{
+    <h2>No Users Found.</h2>
+}
+else
+{
+    <table class="table table-bordered table-responsive">
+        <thead>
+            <tr>
+                <th class="text-center">Username</th>
+                <th class="text-center">Email</th>
+                <th class="text-center">User Roles</th>
+                <th class="text-center">All Roles</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var user in Model.Elements)
+            {
+                <tr class="text-center">
+                    <td>@user.Username</td>
+                    <td>@user.Email</td>
+                    <td>
+                        <form asp-action="RemoveFromRole" method="post">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <input type="hidden" name="UserId" value="@user.Id" />
+                                    <select name="Role" asp-items="Model.Roles" class="form-control"></select>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" class="btn btn-danger" value="Remove" />
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                    <td>
+                        <form asp-action="AddToRole" method="post">
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <input type="hidden" name="UserId" value="@user.Id" />
+                                    <select name="Role" asp-items="Model.Roles" class="form-control"></select>
+                                </div>
+                                <div class="col-md-4">
+                                    <input type="submit" class="btn btn-success" value="Add" />
+                                </div>
+                            </div>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    if (Model.Pagination.TotalPages > 1)
+    {
+        string actionLink = string.IsNullOrWhiteSpace(Model.SearchToken)
+            ? $"/admin/users?"
+            : $"/admin/users?SearchToken={Model.SearchToken}&";
+
+        Model.Pagination.ActionLink = actionLink;
+
+        @Html.Partial("_Pagination", Model.Pagination)
+    }
+}

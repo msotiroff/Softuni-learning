@@ -1,0 +1,15 @@
+﻿@model ILibraryEntry
+
+@{ 
+    switch (Model.GetType().Name)
+    {
+        case nameof(BookIndexViewModel):
+            await Html.RenderPartialAsync("BookIndexViewModel.cshtml");
+            break;
+        case nameof(MovieIndexViewModel):
+            await Html.RenderPartialAsync("MovieIndexViewModel.cshtml");
+            break;
+        default:
+            break;
+    }
+}

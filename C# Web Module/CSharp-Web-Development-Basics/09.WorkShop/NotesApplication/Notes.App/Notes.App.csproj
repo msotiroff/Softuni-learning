@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>netcoreapp2.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Notes.Common\Notes.Common.csproj" />
+    <ProjectReference Include="..\Notes.Data\Notes.Data.csproj" />
+    <ProjectReference Include="..\Notes.Models\Notes.Models.csproj" />
+    <ProjectReference Include="..\Notes.Services\Notes.Services.csproj" />
+    <ProjectReference Include="..\SimpleMvc.Framework\SimpleMvc.Framework.csproj" />
+    <ProjectReference Include="..\WebServer\WebServer.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="7.0.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="2.1.0" />
+  </ItemGroup>
+
+</Project>

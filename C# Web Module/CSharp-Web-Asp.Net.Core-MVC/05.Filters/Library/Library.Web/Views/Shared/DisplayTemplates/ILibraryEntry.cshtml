@@ -1,0 +1,15 @@
+﻿@model ILibraryEntry
+
+@{ 
+    switch (Model.GetType().Name)
+    {
+        case nameof(BookIndexViewModel):
+            Html.RenderPartial("BookIndexViewModel.cshtml");
+            break;
+        case nameof(MovieIndexViewModel):
+            Html.RenderPartial("MovieIndexViewModel.cshtml");
+            break;
+        default:
+            break;
+    }
+}

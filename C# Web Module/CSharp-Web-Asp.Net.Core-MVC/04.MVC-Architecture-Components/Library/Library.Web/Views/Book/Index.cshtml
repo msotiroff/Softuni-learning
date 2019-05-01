@@ -1,0 +1,74 @@
+﻿@model PaginatedList<BookIndexViewModel>
+
+@{
+    ViewData["Title"] = "Books";
+}
+
+<div class="container-fluid text-center">
+    <h1>Book Library</h1>
+
+    <a asp-action="create" class="btn btn-success">Add new Book</a>
+</div>
+<br />
+
+<div class="container-fluid">
+    <table class="table table-striped table-hover center">
+        <thead>
+            <tr>
+                <th width="30%">Title</th>
+                <th width="50%">Author</th>
+                <th width="20%">Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var book in Model)
+            {
+                <tr>
+                    <td>
+                        <a asp-action="details" asp-route-id="@book.Id">@book.Title</a>
+                    </td>
+                    <td>
+                        @for (int i = 0; i < book.Originators.Count; i++)
+                        {
+                            var author = book.Originators[i];
+                            <a asp-controller="author" asp-action="details" asp-route-id="@author.Id">@author.Name</a>
+                            if (i < book.Originators.Count - 1)
+                            {
+                                <span>, </span>
+                            }
+                        }
+                    </td>
+                    <td>@book.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+    var firstDisabled = Model.PageIndex == 1 ? "disabled" : "";
+    var lastDisabled = Model.TotalPages == Model.PageIndex ? "disabled" : "";
+}
+<div class="text-center">
+    <a asp-route-pageIndex="1"
+       class="btn btn-light @firstDisabled">
+        First page
+    </a>
+    <a asp-route-pageIndex="@(Model.PageIndex - 1)"
+       class="btn btn-light @prevDisabled">
+        Previous
+    </a>
+    <span class="btn btn-light">
+        @Model.PageIndex
+    </span>
+    <a asp-route-pageIndex="@(Model.PageIndex + 1)"
+       class="btn btn-light @nextDisabled">
+        Next
+    </a>
+    <a asp-route-pageIndex="@(Model.TotalPages)"
+       class="btn btn-light @lastDisabled">
+        Last page
+    </a>
+</div>

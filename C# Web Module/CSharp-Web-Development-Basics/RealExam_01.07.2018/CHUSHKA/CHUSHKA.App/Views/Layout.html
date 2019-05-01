@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <title>CHUSHKA</title>
+    <link rel="stylesheet" type="text/css" href="css/reset-css.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/toastr.min.css"/>
+</head>
+<body>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg chushka-bg-color">
+                <a class="navbar-brand nav-link-white" href="/">CHUSHKA</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link nav-link-white" href="/">Home</a>
+                        </li>
+                        <li style="display: {{{adminDisplay}}}" class="nav-item">
+                            <a class="nav-link nav-link-white" href="/product/create">Create Product</a>
+                        </li>
+                        <li style="display: {{{adminDisplay}}}" class="nav-item">
+                            <a class="nav-link nav-link-white" href="/order/all">All Orders</a>
+                        </li>
+                        <li style="display: {{{guestDisplay}}}" class="nav-item">
+                            <a class="nav-link nav-link-white" href="/account/login">Login</a>
+                        </li>
+                        <li style="display: {{{guestDisplay}}}" class="nav-item">
+                            <a class="nav-link nav-link-white" href="/account/register">Register</a>
+                        </li>
+                        <li style="display: {{{userDisplay}}}" class="nav-item">
+                            <a class="nav-link nav-link-white" href="/account/logout">Logout</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            {{{content}}}
+        </main>
+    </div>
+
+    <footer>
+        <div class="container-fluid chushka-bg-color">
+            <div class="text-white p-2 text-center">
+                &copy; CopyRight Sanity Web Design Studios 2018. All rights reserved.
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/jquery-3.3.1.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/toastr.min.js"></script>
+    <script src="js/notifier.js"></script>
+
+    <script>
+        let show = '{{{show-notification}}}';
+        if (show == 'true') {
+            notifier.showMessage("{{{message}}}", "{{{class}}}");
+        }
+    </script>
+</body>
+</html>

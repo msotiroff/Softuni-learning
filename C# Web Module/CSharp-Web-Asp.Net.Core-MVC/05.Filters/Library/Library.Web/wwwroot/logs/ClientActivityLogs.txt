@@ -1,0 +1,135 @@
+﻿Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 19 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 258 ms.
+Information: Executing GET Account.Login
+Information: Model state: [valid]
+Information: Executed GET Account.Login in 5 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 149 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 142 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 13 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 211 ms.
+Information: Executing GET Account.Login
+Information: Model state: [valid]
+Information: Executed GET Account.Login in 5 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 249 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 72 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 73 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 61 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 71 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 118 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 101 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 16 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 228 ms.
+Information: Executing GET Account.Login
+Information: Model state: [valid]
+Information: Executed GET Account.Login in 6 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 215 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 10 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 151 ms.
+Information: Executing GET Account.Logout
+Information: Model state: [valid]
+Information: Executed GET Account.Logout in 10 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 6 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 93 ms.
+Information: Executing GET Account.Login
+Information: Model state: [valid]
+Information: Executed GET Account.Login in 6 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 105 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 23 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 279 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 25 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 360 ms.
+Information: Executing GET Account.Login
+Information: Model state: [valid]
+Information: Executed GET Account.Login in 6 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 214 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 6 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 86 ms.
+Information: Executing GET Account.Logout
+Information: Model state: [valid]
+Information: Executed GET Account.Logout in 8 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 4 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 76 ms.
+Information: Executing GET Account.Login
+Information: Model state: [valid]
+Information: Executed GET Account.Login in 15 ms.
+Information: Executing POST Account.Login
+Information: Model state: [valid]
+Information: Executed POST Account.Login in 18 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 6 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 78 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 20 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 90 ms.
+Information: Executing GET Home.Index
+Information: Model state: [valid]
+Information: Executed GET Home.Index in 4 ms.
+Information: Executing GET Book.Index
+Information: Model state: [valid]
+Information: Executed GET Book.Index in 85 ms.

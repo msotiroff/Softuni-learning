@@ -1,0 +1,42 @@
+﻿@model BookBorrowingViewModel
+
+@{
+    ViewData["Title"] = "Borrow";
+}
+
+<h2 class="text-center">Borrow a book</h2>
+
+<div class="container body-content">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <form method="post">
+                <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                <input type="text" asp-for="Id" value="@Model.Id" hidden="hidden" />
+                <input type="text" asp-for="BookTitle" value="@Model.BookTitle" hidden="hidden" />
+                <div class="form-group">
+                    <label class="control-label"><b>Book</b>:</label>
+                    <input readonly="readonly" type="text" class="form-control" value="@Model.BookTitle" />
+                </div>
+                <div class="form-group">
+                    <label class="control-label"><b>Borrower</b>:</label>
+                    <select class="form-control" asp-for="SelectedBorrowerId" asp-items="Model.Borrowers"></select>
+                </div>
+                <div class="form-group">
+                    <label class="control-label"><b>Date of borrowing</b>:</label>
+                    <input asp-for="DateBorrowed" type="date" class="form-control" readonly="readonly" />
+                    <span asp-validation-for="DateBorrowed" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label class="control-label"><b>Expiration date</b>:</label>
+                    <input asp-for="ExpirationDate" type="date" class="form-control" />
+                </div>
+                <div class="form-group">
+                    <br />
+                    <input type="submit" value="Borrow" class="btn btn-success" />
+                    <a href="/" class="btn btn-dark">Cancel</a>
+                    <a asp-controller="borrower" asp-action="create" asp-route-returnurl="/book/borrow/@Model.Id" class="btn btn-primary">Add new borrower</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
