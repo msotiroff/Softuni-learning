@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01.SplinterTrip", "01.SplinterTrip\01.SplinterTrip.csproj", "{997F1BCE-EF8F-4FC2-BAF3-30E664AE74C9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "02.SpyGram", "02.SpyGram\02.SpyGram.csproj", "{961DA1D8-D5F7-4678-8BDC-279DD8E60246}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{997F1BCE-EF8F-4FC2-BAF3-30E664AE74C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{997F1BCE-EF8F-4FC2-BAF3-30E664AE74C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{997F1BCE-EF8F-4FC2-BAF3-30E664AE74C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{997F1BCE-EF8F-4FC2-BAF3-30E664AE74C9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{961DA1D8-D5F7-4678-8BDC-279DD8E60246}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{961DA1D8-D5F7-4678-8BDC-279DD8E60246}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{961DA1D8-D5F7-4678-8BDC-279DD8E60246}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{961DA1D8-D5F7-4678-8BDC-279DD8E60246}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
